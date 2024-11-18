@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
- Ik wil de site van https://oaktravel.nl/ proberen na te maken. 
+ Ik wil de site van https://diergaardeblijdorp.nl/nl proberen na te maken. 
  
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepagina website oaktravel:
-  <img src="readme-images/homepagina.JPG" width="375px" alt="de homepagina van de site">
+  <img src="readme-images/homepagina-blijdorp.JPG" width="375px" alt="de homepagina van de site">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Surfkamp Adventure Australië:
-  <img src="readme-images/surfpagina.JPG" width="375px" alt="pagina met informatie over een surfkamp in Australië">
+  <img src="readme-images/dierpagina.JPG" width="375px" alt="pagina met informatie over een dier in de dierentuin">
  
 </details>
 
