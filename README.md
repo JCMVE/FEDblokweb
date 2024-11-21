@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepagina-blijdorp.JPG" width="375px" alt="de homepagina van de site">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Dier pagina:
-  <img src="readme-images/dierpagina.JPG" width="375px" alt="pagina met informatie over een dier in de dierentuin">
+  Partner pagina:
+  <img src="readme-images/partnerpagina.JPG" width="375px" alt="pagina met informatie over een dier in de dierentuin">
  
 </details>
 
