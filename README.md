@@ -82,39 +82,50 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Voortgang 1 (week 2)
 
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Het was weer even inkomen, het was namelijk el echt een tijdje geleden dat ik bezig ben geweest met code. Voor mijn gevoel ging het opzetten van het bestand wel goed en de basis met de structuur ging wel goed (ookal weet ik nogsteeds niet of ik alles juist heb gebruikt.) 
+ Als eerste vond ik het moeilijk om een goede site te vinden, dus daar ging het eigenlijk al mis. De site die ik nu heb gekozen vind ik wel heel leuk maar er zitten ook wel veel animaties in dus dat gaat nog wel een uitdaging worden. 
+ Het eerste waar ik tegenaan ben gelopen is de tekst over afbeeldingen zetten, ik heb veel gegoogled en daar kwam ik wel dingen tegen die mogelijk waren maar ik wist niet zeker of ik het allemaal mag gaan gebruiken (dit ga ik dan ook zeker even navragen). Eigenlijk heb ik voor de eerste voortgangsgesprekken vooral een basis opgezet en het nog simpel gehouden en heb ik vragen opgeschreven waardoor ik hopelijk verder kan gaan werken. 
+ De scroll image had ik wel al toegevoegd, deze had ik namelijk al een keer gebruikt bij internetstandaarden dus ik wist hoe ik dat moest doen. Ookal was dit ook wel weer even kijken naar de code en wat puzzelen omdat ik eerst de border radius op het hele scroll gedeelte had gezet en niet op de images waardoor het er gek uit zag. Maar toen kwam ik er ook zelf wel snel achter dat ik de border radius alleen op de afbeeldingen moest zetten. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3    | 
+  | ---            | ---                | ---          | 
+  | dit bespreken  | en dit             | en ik dit    | 
+  | en dat ook nog | dit als er tijd is | nog een punt | 
+  | ...            | ...                | ...          | 
+
+  Ik heb het gehad over:
+  - Hoe ik tekst over een afbeelding moest plaatsen --> Dit was een vraag die meerdere personen uit mijn groepje had, dus daar hadden we allemaal dus wat aan. 
+  - Hoe ik verschillende animaties kon gaan aanpakken en op wat ik zou moeten zoeken.
+  - Hoe ik doormiddel van knoppen (pijltje vooruit, pijltje achteruit) door verschillende afbeeldingen kon klikken --> dit was ook een vraag die we als groep hadden, dus meer personen hadden hier wat aan. 
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen:
 
-  - 
-  - punt 2
-  - nog een punt
-  - ...
+  De meeting vond ik zelf wel heel handig om vragen te stellen en zo hopelijk weer verder te kunnen werken. 
+  Ik heb genoeg tijd gekregen om mijn vragen te stellen en er samen even naar te kijken wat ik heel fijn vond. 
+  Er werd gelijk gekeken hoe ik het zou kunnen gaan aanpakken en welke hulpmiddelen (sites) ik zou kunnen gebruiken om een idee te krijgen hoe mijn
+  code eruit zou moeten gaan zien. 
+  Ik had namelijk moeite met tekst over de afbeelding te zetten en toen werd er gelijk gezegd dat dit nog uitgelegd ging worden in de les en werd er een linkje van w3schools gestuurd zodat ik daar alvast naar kon kijken. 
+  Ook heb ik nog meer vragen kunnen stellen over animaties die in mijn site zitten en hebben we daar samen ook even naar gekeken en werd er gezegt dat we hier samen nog even naar konden kijken, dus dat zorgde wel voor geruststelling aangezien ik echt dacht dat het mij nooit zou gaan lukken. 
 
+  - Ik vond het fijn dat we met een groepje ook naar elkaars werk konden kijken, als je dan tegen dezelfde problemen aanloopt kun je daar samen naar kijken en samen kijken hoe je het zou moeten oplossen.
+  - Fijn moment om je vragen te kunnen stellen en kijken of je een beetje op schema ligt.
+  - Goed geholpen, ze gingen gelijk kijken of ze konden helpen en als ze het niet wisten gingen ze er even verder onderzoek naar doen om je uiteindelijk toch wel te kunnen helpen. 
+
+  
+  
 </details>
-
-
 
 
 
