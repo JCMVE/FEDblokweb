@@ -25,6 +25,7 @@
 
 body {
 	font-family: "montserrat", sans-serif;
+	
 }
 
 h1{
@@ -35,14 +36,16 @@ h1{
 h2{
 	font-weight: 700;
 
+
 }
 
 a{
 	border-radius: 2em;
 	text-decoration: none;
 	border-style: solid;
-	color:#3db977 ;
 	padding: 0.5em;
+	color: white;
+	
 }
 
 img{
@@ -60,6 +63,46 @@ img{
 	left: 0.5em;
 }
 
+.container{
+	position: relative;
+	padding-bottom: 1.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	display: inline-block;
+	
+}
+
+.container img{
+	border-radius: 1em;
+	display: block;
+	height: 20em;
+	object-fit:cover; /* Zorgt ervoor dat de afbeelding netjes past zonder uitgerekt te worden  bron: ChatGPT*/
+	
+}
+
+.container p{
+	position: absolute;
+	top:0;
+	left: 2em;
+	color: white;
+	font-size: 0.875rem;
+}
+
+.container h2{
+	position: absolute;
+	top: 1em;
+	left: 1.4em;
+	color: white;
+	font-size: 1.25rem;
+}
+
+.ButtonPlaatje{
+	position: absolute;
+	bottom: 3em;
+	left: 2em;
+	
+}
+
 .scroll-image{
 	display: flex;
 	overflow: scroll;
@@ -71,6 +114,19 @@ img{
 	width: 75%;
 	border-radius: 1em;
 }
+
+.h3-scroll{
+	display: flex;
+	position: absolute;
+	gap: 5em;
+	left: 2em;
+	
+
+
+	
+
+}
+
 
 
 

@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Partner pagina:
-  <img src="readme-images/partnerpagina.JPG" width="375px" alt="pagina met informatie over een dier in de dierentuin">
+  <img src="readme-images/partnerpagina.JPG" width="375px" alt="pagina met informatie over de partners van de dierentuin.">
  
 </details>
 
@@ -57,6 +57,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -
+  -
+  -
 
 </details>
 
@@ -68,14 +71,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Breakdown schetsen FED - partner pagina.jpg" width="375px" alt="breakdown van de hele partner pagina">
+  <img>
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Breakdown schetsen FED - menu.jpg" width="375px" alt="breakdown van een het menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  
 </details>
 
 
@@ -104,7 +107,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - 
   - punt 2
   - nog een punt
   - ...
