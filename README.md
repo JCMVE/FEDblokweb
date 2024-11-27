@@ -57,12 +57,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  -
-  -
-  -
+  - Niet alle afbeeldingen hebben een alt tekst, wat niet handig is voor mensen met een screenreader
+  - De headings zijn logisch, er is maar 1 h1 op een pagina en voor de rest is er h2/h3 gebruikt
+  - De dark-mode wordt op de site niet echt goed ondersteund, zommige dingen gaan wel mee en andere weer niet
+  - De animaties, daar gebeurd niet echt iets mee als je de reduced motion aanklikt, dit blijft gewoon hetzelfde wat niet echt fijn is voor mensen die hier gevoelig voor zijn. 
+  - Er is genoeg ruimte om alles te bedienen als je de site bekijkt op mobiel
+  - met de screenreader wordt alles goed aangegeven en worden de headings en linkjes allemaal goed vertelt en worden de linkjes ook uitgeklapt waar het nodig is. 
 
 </details>
-
 
 
 ## Breakdownschets (week 1)
@@ -137,6 +139,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Deze week kwam ik nogsteeds voor dezelfde uitdagingen te staan als de week daarvoor. Alleen heb ik deze week dus meer informatie gekregen in de les over tekst over een afbeelding positioneren. In de les kregen we hier namelijk theorie over en daar heb ik de opdrachten ook van gemaakt omdat dit dus ook veel voorkomt in mijn site. Het is uiteindelijk deze week gelukt op de 3 afbeeldingen die onder elkaar staan goed te zetten met de tekst erover heen. Alleen vroeg ik mij af of het wel helemaal klopte en of ik het wel goed had neergezet, ik had namelijk gewerkt met een section met daarin articles en ik wist niet zeker of deze articles wel klopte. Ook had ik de verschillende elementen in de articles op een bepaalde manier aangeroepen en ik wist ook niet of dit de goede manier was. Dit heb ik toen aan Ivo gevraagd en hij heeft even naar mijn code gekeken en verteld dat de manier die ik had wel kon maar dat er wel iets aan verbeterd kon worden. Deze verbetering lag niet in mijn CSS, maar in de HTML. De articles waren namelijk niet echt logisch en hij zei dat ik het beter kon gaan veranderen naar een ul met li. Hier ben ik dan ook mee aan de slag gegaan en dit ging eigenlijk ook wel goed. Alleen liep ik tegen een klein probleempje aan dat de bovenste afbeelding weer groter was dan de rest en dat de afbeeldingen meer rechts uitgelijnd waren waardoor er aan de rechterkant dus een stukje witruimte kwam, dit vond ik best gek omdat ik niet gebruik heb gemaakt van padding of een margin. Uiteindelijk na wat dingen geprobeerd te hebben zoals proberen de content in het midden te plaatsen, heb ik de padding op 0 gezet en daardoor veranderde hij dus goed en stonden de 3 blokjes weer goed op hun plek. 
+
+Daarna ben ik nog gaan uitzoeken hoe ik de zwarte overlay over de afbeeldingen kon krijgen maar hier ben ik nogsteeds niet achter gekomen hoe dit moest. Ik heb aan Bregje gevraagd in de les hoe ik dat zou kunnen aanpakken en ik heb geprobeerd om met het pseudo element ::before te werken, alleen werkte het niet toen ik dat probeerde. Er kwam helemaal niks tevoorschijn op mijn website. Ook heb ik nog iets met div geprobeerd en ook dit werkte niet. Toen zat ik er wel even doorheen en had ik er niet echt veel zin meer in. 
+Daarom ben ik weer verder gegaan naar wat anders, het is namelijk ook gelukt om de tekst over mijn scroll images te plaatsen, dus hier ben ik wel heel erg blij mee dat dat is gelukt. Ook dit was wel even proberen met de posities van de tekst maar dit was ook wel weer snel gelukt. 
+
+Toen ben ik nog gaan kijken naar het menu van de site en ik heb wat dingen opgezocht op w3schools, maar ik kwam nog niet echt iets vergelijkbaars tegen dus hier moet ik nog even verder naar gaan kijken, maar dat leek mij iets te moeilijk en te lang om nog uit te gaan zoeken. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -146,6 +154,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+  vragen: 
+
+  - Hoe krijg ik de zwarte gloed over de pagina's (dingen geprobeerd maar kom er niet uit).
+  - Mag ik het 1e plaatje als background image doen?
+  - Wat kan ik zoeken om een begin te maken aan de animatie (van de partners).
+  - Waar is mijn 1e a gebleven die eigenlijk in mijn 1e afbeelding zou moeten staan?
+  - Hoe kan ik het beste het onderste stuk aanpakken?
+  - Ik kan de vormen op de achtergrond nogsteeds niet vinden.
 
 
   ### Verslag van meeting
@@ -243,8 +260,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://fonts.adobe.com/fonts/montserrat
+  2. https://www.w3schools.com/howto/howto_css_image_text.asp  "hoe zet je tekst over een afbeelding"
+  3. https://www.w3schools.com/css/css3_gradients.asp " gradient als background color"
+  4. Chatgpt --> voor object:fit 
 
 </details>
