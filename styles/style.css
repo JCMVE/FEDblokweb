@@ -71,6 +71,35 @@ ul{
 	color: rgb(255 255 255);
 }
 
+.begin-partnerfoto{
+	position: relative;
+	padding-top: 10em;
+}
+
+.begin-partnerfoto img{
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	height: 30em;
+	object-fit: cover;
+}
+
+.begin-partnerfoto h1{
+	color: white;
+	font-size: 2rem;
+}
+
+.begin-partnerfoto p{
+	color: white;
+	font-size: 0.875rem;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5rem;
+}
+
+
+
+
 .tekstoverplaatje{
 	position: absolute;
 	top: 2em;
@@ -122,7 +151,7 @@ ul{
 }
 
 .scroll-image img {
-	width: 75%;
+	width: 60%;
 	border-radius: 1em;
 	position: relative;
 	margin-left: 1em;
@@ -132,7 +161,7 @@ ul{
 .scroll-image h3:nth-child(2){
 	position: absolute;
 	bottom: 2em;
-	left: 2em;
+	left: 3em;
 	color: white;
 	font-size: 1em;
 
@@ -141,7 +170,7 @@ ul{
 .scroll-image h3:nth-child(4){
 	position: absolute;
 	bottom: 2em;
-	right: -4em;
+	right: -2em;
 	color: white;
 	font-size: 1em;
 }
@@ -196,5 +225,6 @@ main > section:nth-of-type(2) ul li::before {  /*https://bryanlrobinson.com/blog
 	opacity: 0.2;
 	border-radius: 1em;
 }
+
 
 

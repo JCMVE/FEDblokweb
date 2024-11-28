@@ -161,8 +161,10 @@ Toen ben ik nog gaan kijken naar het menu van de site en ik heb wat dingen opgez
   - Mag ik het 1e plaatje als background image doen?
   - Wat kan ik zoeken om een begin te maken aan de animatie (van de partners).
   - Hoe krijg ik de zwarte overlay precies de maat van mijn li?
+  - Hoe krijg ik de zwarte overlay over het 1e plaatje (geprobeerd om de manier waarop het nu was gelukt, maar nu lukt het niet)
   - Hoe kan ik het beste het onderste stuk aanpakken?
   - Ik kan de vormen op de achtergrond nogsteeds niet vinden.
+  - Hoe krijg ik de buttons in het midden met de gradient? 
 
 
   ### Verslag van meeting
