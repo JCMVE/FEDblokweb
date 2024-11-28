@@ -3,6 +3,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
 /*********************/
@@ -25,17 +27,22 @@
 
 body {
 	font-family: "montserrat", sans-serif;
-	
 }
 
 h1{
 	font-weight: 900;
 	font-size: 2em;
+	padding-left: 1em;
 }
 
 h2{
 	font-weight: 700;
+	padding-left: 1em;
+	padding-top: 1em;
+}
 
+p {
+	padding: 1em;
 
 }
 
@@ -45,20 +52,18 @@ a{
 	border-style: solid;
 	padding: 0.5em;
 	color: white;
-	
 }
 
 img{
 	width: 100%;
 	height: auto;
+	
 }
 
 ul{
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
-	gap: 2em;
-	padding: 0;
 }
 
 .begin-homepagina{
@@ -74,14 +79,16 @@ ul{
 
 .container {
 	position: relative;
+	padding: 1em;
 }
 
 .container h2{
 	position: absolute;
-	top: 1em;
-	left: 1.4em;
+	top: 2em;
+	left: 1em;
 	color: white;
 	font-size: 1.25rem;
+	padding: 1em;
 }
 
 .container img{
@@ -92,7 +99,7 @@ ul{
 
 .container p{
 	position: absolute;
-	top:0;
+	top: 1.5em;
 	left: 2em;
 	color: white;
 	font-size: 0.875rem;
@@ -109,7 +116,6 @@ ul{
 .scroll-image{
 	display: flex;
 	overflow: scroll;
-	gap: 1em ;
 	margin-bottom: 2em;
 	position: relative;
 	
@@ -119,12 +125,14 @@ ul{
 	width: 75%;
 	border-radius: 1em;
 	position: relative;
+	margin-left: 1em;
+
 }
 
 .scroll-image h3:nth-child(2){
 	position: absolute;
 	bottom: 2em;
-	left: 1em;
+	left: 2em;
 	color: white;
 	font-size: 1em;
 
@@ -143,15 +151,50 @@ ul{
 	background-repeat: no-repeat;
 	border: none;
 	padding: 0.8em;
+	margin-left: 1em;
 }
 
+.Contact{
+	position: relative;
+	background-image: linear-gradient( #128948 , #3db977);
+	min-height: 40em;  /* De achtergrondkleur liet hij niet zien dus aan ChatGPT gevraagd waardoor dit zou komen, toen kwam eruit dat ik min-height zou kunnen gebruiken*/
+	margin-top: 3em;
+	border-radius: 0.5em;
+
+}
+
+.Contact img{
+	position: absolute;
+	left: 2em;
+	border-radius: 1em;
+	width: 22em;
+    height: 15em ;
+	object-fit: cover;
+	margin-top: 2em;
+}
+
+.Contact article{
+	z-index: 2;
+	position: absolute;
+	background-color: white;
+	border-radius: 1em;
+	padding: 1em;
+	top: 15em;
+	left: 1em;
+	width: 22em;
+	height: 20em;
 
 
+}
 
-
-
-
-
-
+main > section:nth-of-type(2) ul li::before {  /*https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays*/
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.2;
+	border-radius: 1em;
+}
 
 

@@ -160,7 +160,7 @@ Toen ben ik nog gaan kijken naar het menu van de site en ik heb wat dingen opgez
   - Hoe krijg ik de zwarte gloed over de pagina's (dingen geprobeerd maar kom er niet uit).
   - Mag ik het 1e plaatje als background image doen?
   - Wat kan ik zoeken om een begin te maken aan de animatie (van de partners).
-  - Waar is mijn 1e a gebleven die eigenlijk in mijn 1e afbeelding zou moeten staan?
+  - Hoe krijg ik de zwarte overlay precies de maat van mijn li?
   - Hoe kan ik het beste het onderste stuk aanpakken?
   - Ik kan de vormen op de achtergrond nogsteeds niet vinden.
 
