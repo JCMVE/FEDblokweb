@@ -29,6 +29,68 @@ body {
 	font-family: "montserrat", sans-serif;
 }
 
+#logo{
+	width: 8em;
+	height: 10em;
+	object-fit: contain;
+	position:absolute;
+	z-index: 2;
+	padding: 1em;
+	margin: 1em;
+	background-color: white;
+	border-radius: 0.5em;
+	
+}
+
+.hidden { /* bron: https://codepen.io/TheSupermazter/pen/ogvNvwJ*/
+	opacity: 0;
+	transform: translateY(10vh);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .visible { /* bron: https://codepen.io/TheSupermazter/pen/ogvNvwJ*/
+	opacity: 1;
+	transform: translateY(0);
+  }
+  
+ button {
+	display:grid;
+  	place-items:center;
+	position: absolute;
+  }
+
+  button span{
+	grid-row-start: 1;
+	grid-column-start: 1;
+	width:1.2em;
+  	height:.2em;
+  	background-color: black;
+	transition-duration:.5s;
+  }
+
+  button span:nth-of-type(1) {
+	transform:translateY(-.4em);
+  }
+
+  button span:nth-of-type(3) {
+	transform:translateY(.4em);
+  }
+
+  button[aria-expanded="true"] span:nth-of-type(1) {
+	transform:rotate(45deg) scalex(1.25);
+}
+
+button[aria-expanded="true"] span:nth-of-type(2) {
+	opacity:0; /* met opacity helemaal doorzichtig maken */
+  }
+  
+button[aria-expanded="true"] span:nth-of-type(3) {
+	transform:rotate(-45deg) scalex(1.25); 	/* met transform: */
+	/* 1. 45 graden draaien tegen de klok in */
+	/* 2. 25% langer maken */
+  }
+
+
 h1{
 	font-weight: 900;
 	font-size: 2em;
@@ -38,7 +100,8 @@ h1{
 h2{
 	font-weight: 700;
 	padding-left: 1em;
-	padding-top: 1em;
+	margin-top: 1em;
+	
 }
 
 p {
@@ -73,32 +136,31 @@ ul{
 
 .begin-partnerfoto{
 	position: relative;
-	padding-top: 10em;
+	padding-top: 12em;
 }
 
 .begin-partnerfoto img{
 	position: absolute;
 	top: 0;
 	z-index: -1;
-	height: 30em;
+	height: 32em;
 	object-fit: cover;
 }
 
 .begin-partnerfoto h1{
 	color: white;
 	font-size: 2rem;
+	z-index: 1;
+    position: relative;
 }
 
 .begin-partnerfoto p{
 	color: white;
 	font-size: 0.875rem;
-	display: flex;
-	flex-direction: column;
 	line-height: 1.5rem;
+	z-index: 1;
+    position: relative;
 }
-
-
-
 
 .tekstoverplaatje{
 	position: absolute;
@@ -108,12 +170,12 @@ ul{
 
 .container {
 	position: relative;
-	padding: 1em;
+	margin: 1em;
 }
 
 .container h2{
 	position: absolute;
-	top: 2em;
+	top: 1em;
 	left: 1em;
 	color: white;
 	font-size: 1.25rem;
@@ -151,14 +213,13 @@ ul{
 }
 
 .scroll-image img {
-	width: 60%;
+	width: 75%;
 	border-radius: 1em;
 	position: relative;
 	margin-left: 1em;
-
 }
 
-.scroll-image h3:nth-child(2){
+.scroll-image h3:nth-of-type(1){
 	position: absolute;
 	bottom: 2em;
 	left: 3em;
@@ -167,10 +228,10 @@ ul{
 
 }
 
-.scroll-image h3:nth-child(4){
+.scroll-image h3:nth-of-type(2){
 	position: absolute;
 	bottom: 2em;
-	right: -2em;
+	right: -3em;
 	color: white;
 	font-size: 1em;
 }
@@ -183,7 +244,7 @@ ul{
 	margin-left: 1em;
 }
 
-.Contact{
+.contact{
 	position: relative;
 	background-image: linear-gradient( #128948 , #3db977);
 	min-height: 40em;  /* De achtergrondkleur liet hij niet zien dus aan ChatGPT gevraagd waardoor dit zou komen, toen kwam eruit dat ik min-height zou kunnen gebruiken*/
@@ -192,7 +253,7 @@ ul{
 
 }
 
-.Contact img{
+.contact img{
 	position: absolute;
 	left: 2em;
 	border-radius: 1em;
@@ -202,7 +263,7 @@ ul{
 	margin-top: 2em;
 }
 
-.Contact article{
+.contact article{
 	z-index: 2;
 	position: absolute;
 	background-color: white;
@@ -212,19 +273,117 @@ ul{
 	left: 1em;
 	width: 22em;
 	height: 20em;
+}
 
+.begin-partnerfoto::before {  /* https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays */
+	content: "";
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100%;
+	height: 102.5%;
+	background-color: black;
+	opacity: 0.4;
 
 }
 
-main > section:nth-of-type(2) ul li::before {  /*https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays*/
+main > section:nth-of-type(2) ul li::before {  /* https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays */
 	content: "";
 	position: absolute;
-	height: 100%;
+	top: 0;
+    left: 0;
 	width: 100%;
+	height: 100%;
 	background-color: black;
 	opacity: 0.2;
 	border-radius: 1em;
 }
+
+.scroll-image img::before{  /* https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays */
+	content: "";
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100%;
+	height: 102.5%;
+	background-color: black;
+	opacity: 0.4;
+}
+
+/*******************/
+/* Carousel autoplay  bron: https://codepen.io/studiojvla/pen/qVbQqW en Chatgpt*/  
+/*******************/
+
+.carouselcontainer{
+	position: relative;
+	overflow: hidden; /* items buiten de container zijn zo niet te zien*/
+}
+
+.carouselrij{
+	display: flex;
+	flex-direction: row; /* zorgt ervoor dat de ul elementen naast elkaar uitlijnen*/
+	gap: 2em;
+	padding: 0;
+	margin: 0;
+	margin-top: 2em;
+}
+
+.carouselrij li{
+	position: relative;
+}
+
+.carouselrij h2{
+position: absolute;
+bottom: 1em;
+color: white;
+}
+
+.carouselrij p{
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	background-color: cadetblue;
+	border-radius: 1em;
+	color: white;
+
+}
+
+.carouselrij img{
+	border-radius: 2em;
+	width: 15em;
+	height: 15em;
+	object-fit: cover;
+}
+
+.boven{
+	animation: scroll-right 10s linear infinite;
+}
+
+.onder {
+	animation: scroll-left 10s linear infinite;
+}
+
+/*animatie voor de bovenste rij (scrollt naar links)*/
+@keyframes scroll-left{
+	0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*animatie voor de onderste rij (scrollt naar rechts)*/
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
 
 
 

@@ -16,10 +16,18 @@
 
 <body>
     <header>
+        <nav>
+        <img id="logo" src="images/logo.jpg">
+        <button aria-label="menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
 
     </header>
 
-    <main>
+    <main> <!--  class: hidden voor animatie van tekst bron: https://codepen.io/TheSupermazter/pen/ogvNvwJ-->
         <section class="begin-partnerfoto">
                 <h1>Onze partners</h1>
                     <p>We staan samen op onze planeet voor een van de grootste uitdagingen in de geschiedenis. Zonder verandering sterven in een rap tempo veel plant- en diersoorten uit. Het toeroepen van een halt van het verlies aan biodiversiteit is een opdracht voor ons allemaal.
@@ -27,11 +35,11 @@
 			    <img src="images/begin-partnerfoto.JPG" alt=" 4 olifanten bij elkaar in een bos">
         </section>
 
-        <h2>Partners van Blijdorp</h2>
-        <p>Wij geloven in de kracht van deze samenwerkingen en zijn ervan overtuigd dat door gezamenlijk op te treden met onze partners,
+        <h2 class="hidden">Partners van Blijdorp</h2>
+        <p class="hidden">Wij geloven in de kracht van deze samenwerkingen en zijn ervan overtuigd dat door gezamenlijk op te treden met onze partners,
             we een grotere impact kunnen maken en daadwerkelijk het tij kunnen keren voor bedreigde soorten en ecosystemen wereldwijd. Samen bundelen we kennis, middelen en expertise om de biodiversiteit te beschermen en te herstellen.</p>
 
-        <section>
+        <section class="hidden">
                 <ul>
                     <li class="container">  <!-- bron: https://www.w3schools.com/howto/howto_css_image_text.asp  "hoe zet je tekst over een afbeelding"-->
                         <img src="images/olifant.jpg" alt=" olifant in de bossen">
@@ -56,11 +64,66 @@
                  </ul>
             </section>
 
-            <h2>Partner overzicht</h2>
-                <p>Ontdek de partners van Blijdorp</p>
+            <h2 class="hidden">Partner overzicht</h2>
+                <p class="hidden">Ontdek de partners van Blijdorp</p>
                 <a class="button-gradient" href="#">Onze partners</a>
 
-            <section>
+            <div class="carouselcontainer">
+
+                 <!-- Bovenste rij -->
+                <ul class="carouselrij boven">
+                    <li>
+                        <h2>Dura Vermeer</h2>
+                            <p>Platina</p>
+                            <img src="images/oceanium.jpg" alt="">
+                            
+                     </li>
+
+                    <li>
+                        <h2> JGL-Advies </h2>
+                            <p>Brons</p>
+                            <img src="images/flamingo.jpg" alt="">
+
+                    </li>
+
+                    <li>
+                        <h2> TOS Netherlands </h2>
+                            <p>Goud</p>
+                            <img src="images/ijsbeer.jpg" alt="">
+                    </li>
+    
+
+                </ul>
+
+                
+
+                 <!-- Onderste rij -->
+                <ul class="carouselrij onder">
+                    <li>
+                        <h2>Dura Vermeer</h2>
+                            <p>Platina</p>
+                            <img src="images/oceanium.jpg" alt="">
+                            
+                     </li>
+
+                    <li>
+                        <h2> JGL-Advies </h2>
+                            <p>Brons</p>
+                            <img src="images/flamingo.jpg" alt="">
+
+                    </li>
+
+                    <li>
+                        <h2> TOS Netherlands </h2>
+                            <p>Goud</p>
+                            <img src="images/ijsbeer.jpg" alt="">
+                    </li>
+
+                </ul>
+            </div>
+           
+
+            <section class="hidden">
                 <h2>Draag bij aan onze projecten</h2>
                     <p>In onze wereldwijde missie om natuurlijk leefgebieden te herstellen en te behouden, speelt uw steun een essentiële rol. 
                         De projecten de Tree Nursery in de Himalaya en de Bonaire Hub in de Caraïben zijn vitaal voor het beschermen van bedreigde soorten en kwetsbare ecosystemen. Door deze projecten te steunen draagt u niet alleen bij aan de bescherming van de natuur maar ook educatieve projecten die toekomstige generaties zullen inspireren. Sluit u aan bij onze missie en help ons het tij te keren.</p>
@@ -73,10 +136,10 @@
                     <a class="button-gradient" href="#">Project sponsoring</a> <!--https://www.w3schools.com/css/css3_gradients.asp " gradient als background color"-->
             </section>
 
-        <section class="Contact">
-            <img src="images/blijevrouw.jpg" alt="lachende vrouw">
+        <section class="contact">
+            <img class="hidden" src="images/blijevrouw.jpg" alt="lachende vrouw">
             <article> 
-            <h2>Omarmt u ons ook?</h2>
+            <h2 class="hidden">Omarmt u ons ook?</h2>
                 <p>We komen graag in contact om de mogelijkheden te bespreken</p>
                 <p>Neem contact op met Strategische Partnerschappen:</p>
                 <p>Natasja Schipper • tel: 06 558 251 28 / tel. 010 4431453</p>
@@ -84,7 +147,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="hidden">
             <img src="images/rodepanda-himalaya.jpeg" alt="rode panda in de himalaya gebergten">
             <h2>Schrijf je in voor de nieuwsbrief</h2>
             
