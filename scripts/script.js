@@ -1,5 +1,3 @@
-// JavaScript Document
-
 document.addEventListener("DOMContentLoaded", () => {
     const targets = document.querySelectorAll(".hidden"); // Selecteer alle elementen die de class "hidden" hebben
   
@@ -32,4 +30,3 @@ function eersteStreepjesButtonKlik() {
   }
 }
 
-  

@@ -53,10 +53,20 @@ body {
 	transform: translateY(0);
   }
   
+  /* navigatie button */
  button {
 	display:grid;
   	place-items:center;
+	top: 1em;
+	right: 3em;
 	position: absolute;
+	z-index: 2;
+	width: 2em;
+	height: 5em;
+	background-color: transparent;
+	border: none;
+
+	
   }
 
   button span{
@@ -64,12 +74,14 @@ body {
 	grid-column-start: 1;
 	width:1.2em;
   	height:.2em;
-  	background-color: black;
+
 	transition-duration:.5s;
+	background-color: black;
   }
 
   button span:nth-of-type(1) {
 	transform:translateY(-.4em);
+	gap: 2em;
   }
 
   button span:nth-of-type(3) {
@@ -90,6 +102,7 @@ button[aria-expanded="true"] span:nth-of-type(3) {
 	/* 2. 25% langer maken */
   }
 
+  /* Hamburgermenu */
 
 h1{
 	font-weight: 900;
