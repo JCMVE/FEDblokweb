@@ -201,7 +201,24 @@ Toen ben ik nog gaan kijken naar het menu van de site en ik heb wat dingen opgez
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Ik ben wel weer geprobeerd om verder te komen met mijn code. In mijn hoofd heb ik het wel al een beetje opgegeven omdat ik nog best veel moet doen. 
+
+Ik ben bezig geweest met animaties, namelijk mijn images die bewegen op de partnerpagina. dit is grotendeels gelukt alleen gaat het niet oneindig door en komt er op een gegeven moment een wit vlak als alle afbeeldingen langs zijn geweest. Ik heb gevraagd in de les waar dit aan kan liggen en heb dat ook geprobeerd alleen is het probleem er nogsteeds, ik ga het daarom nog wel een keer vragen en kijken of ik er samen met de docent of de studentenassistenten uit ga komen. 
+
+Daarnaast heb ik ook de animatie toegevoegd dat mijn tekst in beeld schuift als je er naartoe scrollt. Dit was best makkelijk te doen omdat ik de voorbeeldcode hiervoor had gekregen en dit ook gelijk werkten. Ik moest alleen even kijken op welke elementen ik dit moest gaan toepassen. 
+
+Daarnaast ben ik nu in de eerste les van de week ook bezig geweest met het maken van mijn hamburgermenu icoon, deze code heb ik gebruikt van een oefening die op dlo stond. Eerst werkte het niet omdat het helemaal niet te zien was maar met wat hulp kwam het icoontje toch wel tevoorschijn. 
+Toen was er nog het probleem dat het button element maar onder 1 streepje stond en ik kreeg dit niet weg. Na het vragen aan een studentassistent en wat zelf te proberen en toe te voegen heb ik het zelf gefixt, maar ik wel echt blij mee was. 
+Dus ik ben echt wel blij dat dat het doet!!!
+
+Daarna kwam het lastigste gedeelte namelijk het hamburgermenu maken. Hier ben ik echt heel lang mee bezig geweest. Ik heb de voorbeelden uit de les erbij gepakt en zelf voorbeelden gezocht op youtube en codepen en heb ook verschillende dingen met code geprobeerd en sommige werkten ook wel, maar ik wist niet zeker of ik die code zomaar kon gebruiken dus heb ik dat weer verwijderd. Nu is het dus nogsteeds niet gelukt en daar baal ik wel een beetje ben ook omdat ik daar best wel wat tijd heb ingestopt.
+
+Omdat dat niet werkte ben ik maar bezig gegaan met het maken van een begin van mn 2e pagina. Dit ging eigenlijk best wel goed ook omdat ik al veel heb geofend met code op de andere pagina dus ik merkte wel dat ik al sneller wist hoe ik het moest gaan aanpakken. 
+Het beginnetje ging dus best goed en snel, alleen moet ik nu beginnen met het maken van een carousel met buttons. Hiervoor had ik van de studentassistenten ook een linkje van codepen gekregen van Sanne, waar dus de code staat hoe ik het moest aanpakken alleen na dit ook bekeken, aangepast en geprobeerd te hebben werkten het niet. 
+Daarna heb ik nog een poging gedaan om het aan Chatgpt te vragen maar hier kwam ik na meerdere pogingen ook niet verder. De plaatjes blijven namelijk onder elkaar staan en komen niet in het carousel blokje. Dit ga ik morgen ook maar na vragen denk ik. De buttons kwamen namelijk wel tevoorschijn alleen de images werkten niet mee, geen idee waarom niet. 
+
+Nu ga ik nog verder met de opzet van de html van mijn 2e pagina en ga ik morgen weer een poging wagen aan de moeilijke dingen. 
 
 
   ### Agenda voor meeting

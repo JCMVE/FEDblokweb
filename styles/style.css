@@ -60,13 +60,14 @@ body {
 	top: 1em;
 	right: 3em;
 	position: absolute;
+	position: fixed;
 	z-index: 2;
-	width: 2em;
-	height: 5em;
+	width: 3em;
+	height: 3em;
+	border-radius: 1em;
 	background-color: transparent;
 	border: none;
-
-	
+	background: white;
   }
 
   button span{
@@ -74,7 +75,6 @@ body {
 	grid-column-start: 1;
 	width:1.2em;
   	height:.2em;
-
 	transition-duration:.5s;
 	background-color: black;
   }
@@ -102,7 +102,81 @@ button[aria-expanded="true"] span:nth-of-type(3) {
 	/* 2. 25% langer maken */
   }
 
-  /* Hamburgermenu */
+
+  /* Hamburgermenu
+nav {
+    position: relative;
+}
+
+nav ul {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+	border-radius: 1em;
+    color: Black;
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+nav ul.active {
+    transform: translateX(0);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+ */
+
+
+  /* Hamburgermenu
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+nav ul li {
+    margin: 1em 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Menu open */
+/* nav[aria-expanded="true"] ul {
+    transform: translateX(0);
+} */
+
+
 
 h1{
 	font-weight: 900;
@@ -144,8 +218,220 @@ ul{
 
 .begin-homepagina{
 	position: relative;
-	color: rgb(255 255 255);
 }
+
+.begin-homepagina h1{
+	color: white;
+	font-size: 2rem;
+	z-index: 1;
+    position: relative;
+	left: 0;
+	top: 8em;
+	width: 10em;
+}
+
+.begin-homepagina p{
+	color: white;
+	line-height: 1.5rem;
+	z-index: 1;
+    position: relative;
+	top: 15em;
+	margin-top: 2em;
+	font-weight: 600;
+}
+
+.begin-homepagina a{
+	position: absolute;
+	color: white;
+	background-color: #cf5107;
+	border: none;
+	padding: 0.8em;
+	left: 1em;
+	z-index: 1;
+	top: 30em;
+	font-weight: 600;
+}
+
+.begin-homepagina img{
+	position: absolute;
+	top: 0;
+	height: 57em;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.openinginfo{
+	position: relative;
+	z-index: 2;
+	background-image: linear-gradient( #3db977, #259d5d); 
+	top: 25em;
+	margin: 1em;
+	border-radius: 1em;
+	height: 20em;
+}
+
+.openinginfo p{
+color: white;
+font-weight: 900;
+font-size: 1.25em;
+position: absolute;
+top: 4em ;
+left: 1em;
+width: 15em;
+
+
+}
+
+.openinginfo a:nth-of-type(1){
+position: absolute;
+border: none;
+width: 10em;
+text-decoration: underline;
+top: 2em;
+left: 2em;
+}
+
+.openinginfo a:nth-of-type(2){
+	position: absolute;
+	border: none;
+	top: 11em;
+	left: 3em;
+	padding: 0.8em;
+	background-color: #cf5107;
+	}
+
+
+.openinginfo a:nth-of-type(3){
+	position: absolute;
+	top: 15em;
+	left: 3em;
+	padding: 0.8em;
+	}
+
+	/* Carousel */
+
+
+	/* Scroll afbeeldingen */
+
+	.scroll{
+	display: flex;
+	overflow: scroll;
+	margin-bottom: 2em;
+	position: relative;
+	margin-top: 2em;
+	gap: 1em;
+	}
+
+	.scroll img{
+	width: 55%;
+	border-radius: 1em;
+	position: relative;
+	margin-left: 1em;
+	}
+	
+	.scroll h3:nth-of-type(1){
+	position: absolute;
+	top: 7em;
+	left: 2em;
+	color: white;
+	font-size: 1.2em;
+	width: 10em;
+	}
+
+	.scroll h3:nth-of-type(2){
+		position: absolute;
+		top: 7em;
+		left: 16em;
+		color: white;
+		font-size: 1.2em;
+		width: 10em;
+		}
+
+	.scroll h3:nth-of-type(3){
+			position: absolute;
+			top: 7em;
+			left: 30em;
+			color: white;
+			font-size: 1.2em;
+			width: 10em;
+			}
+
+	.scroll a:nth-of-type(1){
+		position: absolute;
+		left: 2em;
+		bottom: 1em;
+		font-size: 1.2em;
+	}
+
+	.scroll a:nth-of-type(2){
+		position: absolute;
+		right: -1em;
+		bottom: 1em;
+		font-size: 1.2em;
+	}
+
+	.scroll a:nth-of-type(3){
+		position: absolute;
+		right: -15em;
+		bottom: 1em;
+		font-size: 1.2em;
+	}
+
+	.gradient-button{
+	background-image: linear-gradient(to right, #0072bc ,#004877);
+	background-repeat: no-repeat;
+	border: none;
+	padding: 0.8em;
+	margin-left: 1em;		
+	}
+	
+
+
+
+
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .begin-partnerfoto{
 	position: relative;
@@ -173,12 +459,6 @@ ul{
 	line-height: 1.5rem;
 	z-index: 1;
     position: relative;
-}
-
-.tekstoverplaatje{
-	position: absolute;
-	top: 2em;
-	left: 0.5em;
 }
 
 .container {

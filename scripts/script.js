@@ -1,3 +1,6 @@
+
+// tekst in beeld laten komen effect
+
 document.addEventListener("DOMContentLoaded", () => {
     const targets = document.querySelectorAll(".hidden"); // Selecteer alle elementen die de class "hidden" hebben
   
@@ -19,14 +22,29 @@ document.addEventListener("DOMContentLoaded", () => {
     targets.forEach((target) => observer.observe(target)); // Observe each target element
   });
 
-  var eersteStreepjesButton = document.querySelector("Button");
-eersteStreepjesButton.onclick = eersteStreepjesButtonKlik;
-function eersteStreepjesButtonKlik() {
-  if (eersteStreepjesButton.ariaExpanded == "false") {
-    eersteStreepjesButton.ariaExpanded = "true"
-  }
-  else {
-    eersteStreepjesButton.ariaExpanded = "false"
-  }
-}
+  // hamburgermenu
+
+// Selecteer de elementen
+const button = document.querySelector('nav button');
+const menu = document.querySelector('nav ul');
+
+// Voeg een klik-event toe aan de button
+button.addEventListener('click', () => {
+    // Toggle de aria-expanded waarde
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', !isExpanded);
+    
+    // Toggle de 'active' class op het menu
+    menu.classList.toggle('active');
+});
+
+// Carousel
+
+
+
+
+
+  
+
+
 
