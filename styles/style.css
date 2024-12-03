@@ -376,7 +376,7 @@ left: 2em;
 		bottom: 1em;
 		font-size: 1.2em;
 	}
-
+/* blauwe gradient button */
 	.gradient-button{
 	background-image: linear-gradient(to right, #0072bc ,#004877);
 	background-repeat: no-repeat;
@@ -384,8 +384,62 @@ left: 2em;
 	padding: 0.8em;
 	margin-left: 1em;		
 	}
-	
 
+	/* app section */
+
+	.app{
+	position: relative;
+	background-color: #eaf7f0;
+	min-height: 40em;  /* De achtergrondkleur liet hij niet zien dus aan ChatGPT gevraagd waardoor dit zou komen, toen kwam eruit dat ik min-height zou kunnen gebruiken*/
+	margin-top: 3em;
+	border-radius: 0.5em;
+	}
+
+	.app img{
+	position: absolute;
+	left: 1em;
+	border-radius: 1em;
+	width: 22em;
+    height: 15em ;
+	object-fit: cover;
+	margin-top: 2em;
+	}
+
+	.app div{
+	z-index: 2;
+	position: absolute;
+	background-color: white;
+	border-radius: 1em;
+	padding: 1em;
+	top: 15em;
+	left: 2em;
+	width: 22em;
+	height: 20em;
+	}
+
+	.app div h2{
+	position: absolute;
+	left: 0;
+	font-size: 1.25em;
+	width: 15em;
+	font-weight: 900;
+	}
+	
+	.app div li{
+		list-style-type: disc;
+		position: relative;
+		top: 5em;
+		left: 1em;
+	}
+
+	 .app div li::marker{ /*https://www.w3schools.com/howto/howto_css_bullet_color.asp */ 
+		color: #33af6d;
+	}
+
+	.app div a{
+		position:absolute;
+		bottom: 2em;
+	}
 
 
 
