@@ -441,11 +441,274 @@ left: 2em;
 		bottom: 2em;
 	}
 
+	/* Scrollbar afbeeldingen dieren */
+
+	
+	.scrollbar li {
+		position: relative;
+		margin-bottom: 1em;
+	}
+
+	.scrollbar li img{
+		width: 20em;
+		height: 25em;
+		position: relative;
+		left: 1em;
+		border-radius: 1em;
+	}
+
+	.scrollbar h3{
+		color: white;
+		font-size: 1.25em;
+		position: absolute;
+		bottom: 2em;
+		left: 2em;
+		width: 2em;
+	}
+
+	.scrollbar li:nth-of-type(1) img:nth-of-type(2) {
+		position: absolute;
+		width: 20em;
+		height: 25em;
+		left: 1em;
+		border-radius: 1em;
+	}
+
+	.scrollbar li:nth-of-type(1) img:nth-of-type(3) {
+		position: absolute;
+		width: 22em;
+		height: 20em;
+		object-fit: cover;
+		left: 1em;
+		top: 1em;
+	}
+
+	.scrollbar li:nth-of-type(2) img:nth-of-type(1) {
+		position: absolute;
+		width: 20em;
+		left: 1em;
+		border-radius: 1em;
+	}
 
 
-	  
+	.scrollbar li:nth-of-type(2) img:nth-of-type(3) {
+		position: absolute;
+		width: 22em;
+		height: 22em;
+		object-fit: cover;
+		left: 0em;
+		top: 0.5em;
+	}
+
+	.scrollbar li:nth-of-type(3) img:nth-of-type(1) {
+		position: absolute;
+		width: 20em;
+		left: 1em;
+		border-radius: 1em;
+		
+	}
+
+	.scrollbar li:nth-of-type(3) img:nth-of-type(3) {
+		position: absolute;
+		width: 22em;
+		height: 22em;
+		object-fit: cover;
+		left: 0em;
+		top: 0em;
+	}
+
+	.doneren{
+	position: relative;
+	}
+
+	.doneren img{
+	position: relative;
+	left: 1em;
+	border-radius: 1em;
+	width: 22em;
+    height: 18em ;
+	object-fit: cover;
+	margin-top: 3em;
+	}
+
+	.doneren div{
+	z-index: 2;
+	position: relative;
+	background-color: white;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .14);  /* box-shadow element van https://www.w3schools.com/css/css3_shadows_box.asp de code die er achter staan van de css van de blijdorp website (https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMInr_XyvKNigMVUaKDBx3otgN9EAAYASAAEgIh0vD_BwE)*/
+	border-radius: 1em;
+	padding: 1em;
+	top: -1.5em;
+	left: 2.5em;
+	width: 22em;
+	height: 20em;
+
+	}
+
+	.doneren div h2{
+	position: absolute;
+	left: 0;
+	font-size: 1.25em;
+	width: 15em;
+	font-weight: 900;
+	}
+
+	.doneren div p{
+	position: relative;
+	top: 5em;
+	left: -0.8em;
+	font-size: 0.875em;
+	width: 24em;
+	
+
+	}
+
+	.doneren div a:nth-of-type(1){
+	position:absolute;
+	bottom: 6em;
+	left: 0;
+	}
+
+	.doneren div a:nth-of-type(2){
+	position:absolute;
+	bottom: 2.5em;
+	color: black;
+	border-color: rgb(43 163 99);
+	}
+
+	/* nieuws afbeeldingen */
+
+	.nieuws{
+	position: relative;
+	margin: 1em;
+	}
+
+	.nieuws img{
+		border-radius: 1em;
+		object-fit: cover;
+		height: 15em;	
+	}
+
+	.nieuws h3{
+	position: absolute;
+	bottom: 2em;
+	left: 2em;
+	/* width: 10em; */
+	color: white;
+	font-size: 1.25rem;
+	}
+
+	.nieuws p{
+	position: absolute;
+	top: 8em;
+	left: 2em;
+	color: white;
+	font-size: 0.875rem;
+	}
+
+	.nieuws a{
+	position: absolute;
+	background-image: linear-gradient(to right, #3db977 ,#259d5d);
+	border: none;
+	border-radius: 0.5em;
+	left: 1em;
+	top: 1em;
+	font-size: 0.875em;
+	}
+
+	#nieuwsh2{
+		box-shadow: 0 10px 30px rgba(0, 0, 0, .14);
+		padding: 1em;
+		border-radius: 0.5em;
+		margin: 1em;
+	}
+
+	/* locatie elementen */
+
+	.locatie{
+		background-image: linear-gradient( #006cb3, #004877);
+		border-radius: 0.5em;
+		margin-top: 5em;
+		padding-bottom: 5em;
+		position: relative;
+	}
+
+	.locatie div{
+		position: relative;
+		background-color: white;
+		border-radius: 1em;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, .14);
+		padding-top: 1em;
+		margin: 1em;
+		height: 16em;
+	}
+
+	.locatie div h2{
+		font-weight: 900;
+		width: 15em;
+	}
+
+	.locatie div p{
+		position: relative;
+		left: 0.5em;
+		font-size: 0.875em;
+	}
+
+	.locatie div a{
+	position: absolute;
+	color: black;
+	border-color: rgb(43 163 99);
+	left: 1em;
+	}
+
+	/* nieuwsbrief container */
+
+	.nieuwsbrief{
+	position: relative;
+	background-color:#026fb4 ;
+	border-radius: 0.5em;
+	}
+
+	.nieuwsbrief img{
+	position: relative;
+	left: 1em;
+	border-radius: 1em;
+	width: 22em;
+    height: 18em ;
+	object-fit: cover;
+	margin-top: 3em;
+	}
+
+	.nieuwsbrief h2{
+	left: 0;
+	font-size: 1.25em;
+	width: 15em;
+	font-weight: 900;
+	}
+
+	.nieuwsbrief div{
+	z-index: 2;
+	position: relative;
+	background-color: white;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .14);  /* box-shadow element van https://www.w3schools.com/css/css3_shadows_box.asp de code die er achter staan van de css van de blijdorp website (https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMInr_XyvKNigMVUaKDBx3otgN9EAAYASAAEgIh0vD_BwE)*/
+	border-radius: 1em;
+	padding: 1em;
+	top: -1.5em;
+	left: 2.5em;
+	width: 22em;
+	height: 22em;
+	}
 
 
+	/* radiobuttons https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */ 
+
+	label{
+	display: block;
+	position: relative;
+	padding-left: 2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	}
 
 
 

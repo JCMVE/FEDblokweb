@@ -163,11 +163,35 @@
             </article>
         </section>
 
-        <section class="hidden">
-            <img src="images/rodepanda-himalaya.jpeg" alt="rode panda in de himalaya gebergten">
-            <h2>Schrijf je in voor de nieuwsbrief</h2>
+            <section class="nieuwsbrief">
+                <img src="images/rodepanda-himalaya.jpeg" alt="rode panda in de himalaya gebergten">
+                <div>
+                    <h2>Schrijf je in voor de nieuwsbrief</h2>
+                    <label>
+                        <input type="radio" checked="checked"> <!-- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp -->
+                        <span class="radiobutton"></span>
+                        Ik heb een abonnement
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked">
+                        <span class="radiobutton"></span>
+                        Ik heb geen abonnement
+                    </label>
+                </div>
             
-        </section>
+                <input type="email" placeholder="Vul je e-mail">
+                <!-- <button type="submit"></button> -->
+            
+                 <label> <!-- https://chatgpt.com/c/6750b15b-a63c-800b-bb77-b01b53d885f9 -->
+                    <input type="checkbox">
+                    Ik ga ermee akkoord om andere berichten te ontvangen van www.diergaardeblijdorp.nl.
+                </label>
+                <label>
+                    <input type="checkbox" required>
+                    Ik geef toestemming Diergaarde Blijdorp mijn persoonlijke gegevens op te slaan en te verwerken volgens het privacy statement.*
+                </label>
+            
+            </section>
     </main>
 
     <footer>
