@@ -73,11 +73,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/Breakdown schetsen FED - partner pagina.jpg" width="375px" alt="breakdown van de hele partner pagina">
+  <img src="readme-images/breakdownpagina.jpg" width="375px" alt="breakdown van de hele partner pagina">
   <img>
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/Breakdown schetsen FED - menu.jpg" width="375px" alt="breakdown van een het menu">
+  <img src="readme-images/breakdownmenu.jpg" width="375px" alt="breakdown van een het menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   
@@ -257,10 +257,10 @@ vragen:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Er is geholpen met het naast elkaar zetten van elementen, ik snapte namelijk niet dat het niet werkten omdat ik het op andere delen van de pagina ook heb laten werken, maar dit was nu gelukt.
+  - Ook is er meegekeken naar van plaatjes op de partner pagina die uit zichzelf bewegen dat het niet doorliep en er uiteindelijk dus een heel wit valk naar voren kwam, maar hier kwamen we samen ook niet uit wat wel jammer was.
+  - Dan heb ik gevraagd over een onderdeel op de pagina van de homepagina waar als de plaatjes veranderd er ook een pijltje inspringt bij de tekst en dit steeds veranderd, hier heb ik akkoord voor gekregen om dit te skippen en niet te doen, wat ik wel fijn vond want dat vond ik ook wel echt lastig en kwam ik niet uit.
+  - Dan heb ik nog hulp gevraagd voor de carroussels alleen kreeg ik hier alleen een aanpak van terug en die had ik ook al gebprobeerd, dus vond het wel jammer dat daar niet samen naar gekeken werd. 
 
 </details>
 
@@ -270,25 +270,54 @@ vragen:
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
+  Eigenlijk had ik het deze week, maar ook vorige week al een klein beetje opgegeven omdat ik nog best veel dingen moest doen en ik problemen had met het hamburgermenu en mijn carroussels, dit lukte niet en heb ik veel tijd in gestoken, waardoor ik dus veel tijd daarin heb gestopt en dus tijd heb verloren om aan de andere dingen te werken. 
+  
+  Ik had de moet nog niet opgegeven, ik wilde namelijk wel zo ver mogelijk komen om voor de herkansing minder te gaan moeten doen. 
+
+  Toen ik uiteindelijk voor de zoveelste keer aan het werk was aan dat stomme carroussel heb ik het opgegeven en laten liggen zodat ik de rest van mijn pagina nog wel af kon gaan maken en daar de tijd in te steken. 
+  Hier gingen ook wel echt een paar dingen mis, maar uiteindelijk ging dit wel soepeler dan dat carroussel wat ik wel fijn vond. 
+
+  Ook heb ik deze week mijn hamburgermenu een soort van laten werken en vormgegeven waar ik wel heel blij mee was omdat ik hier ook best wel moeite mee had omdat ik veel dingen had geprobeerd maar het niet werkten. 
+
+  Als laatste was ik bezig geweest met het nieuwsbrief stukje, wat eigenlijk wel makkelijk ging en ik daar zelf wel voor kon zorgen dat dat er goed uit ging zien dus dat vond ik fijn. 
+
+  Dan als laatste ben ik nog bezig geweest met mn footer en dat ging ook even helemaal fout, ik had namelijk een ul aangemaakt met li maar ik had deze li geen a gegeven wat wel moest. 
+  Ook wilde ik de linkjes die in de ul stonden naast elkaar uitlijnen dus ik dacht dat ik dat moest doen met display flex en dan flex wrap wrap maar dat deed het niet en ik snapte er helemaal niks van, na veel dingen geprobeerd te hebben heb ik ze in een div geplaatst en toen werkte het wel. 
+  Maar toen kwam ik ergens achter op de blijdorp site zelf hadden ze namelijk gebruik gemaakt van een grid en grid columns dus heb ik dit ook geprobeerd en dit werkten, teon dit werkten heb ik de div weggehaald en heb ik het aan de ul gekoppeld.
+  Het duurde ook even voordat dat het deed, maar uiteindelijk is dat nog gelukt, wat ik wel heel fijn vond. 
+
+  Ook had ik geen tijd meer om het laatste deel te maken van de footer met de social media enzo. 
+
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Ik heb geleerd hoe ik tekst over images heen moet plaatsen, aan het begin lukte dit niet en had ik er wel moeite mee, maar na de les die we erover hadden gehad ben ik met mijn eigen code aan de slag gegaan en werkte dit eigenlijk goed. Daar ben ik wel blij mee omdat ik dit veel moest toepassen op mijn pagina. 
+
+Ook hebben ik geleerd om verschillende elementen aan te spreken in mijn css met bijvoorbeeld nth-of-type, dit had ik nog nooit eerder gebruikt en dit heb ik dus ontdekt. Uiteindelijk heb ik dit best veel toegepast en vond ik dit een fijne manier omdat ik dan niet voor elk ding een andere class moest aanmaken. 
+
+Ook heb ik geleerd om te werken met gradient, ik had namelijk vlakken en buttons die een gradient achtergrond hadden, ik wist helemaal niet dat dit kon en wist daarom ook niet hoe ik dit moest gaan toepassen maar toen heb ik via w3schools gezien hoe dat moest en heb ik via daar de achtergronden met een gradient gemaakt wat ik wel heel cool vond. 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+ Ik vond veel lastig tijdens het coderen, ookal heb ik veel veel nieuwe dingen geleerd en ooknieuwe dingen gecodeerd. 
+ Als eerste had ik best wel veel moeite met het hamburgermenu, ik heb echt heel veel pogingen gedaan en naar de voorbeeld code gekeken en ook nog gekeken naar andere voorbeelden die ik kon vinden, maar niks werkte. Dat moet ik natuurlijk iets niet goed doen maar kwam er ook niet uit wat er niet klopten. Ook heb ik Chatgpt gevraagd maar ook met dit kwam ik er niet uit. 
+ 
+ Uiteindelijk is het wel gelukt alleen werkt het nog niet helemaal goed, als ik namelijk het hele menu maak dan zijn er op het einde sommige links gewoon niet te zien en stopt het menu gewoon en ook heb ik meerdere dingen geprobeerd om dit op te lossen zoals de height aanpassen maar ook dit werkt niet. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
+ Daarnaast heb ik in mijn homepgaina dus 2 carroussels nodig, ik heb echt zoveel geprobeerd maar kwam er maar niet uit waarom het bij mij niet lukte. Ik heb het voorbeeld meerdere keren bekeken en uitgevoerd, heb geprobeerd youtube tutorials te bekijken en heb gekeken naar code van vrienden en ook na dit proberen gebeurde er gewoon niks. De images stonden gewoon nog op de zelfde plek. Dus ik snap niet hoe dit dan moet. 
 
+ Daarnaast moest ik ook nog een keer mijn images op autoplay hebben en hier heb ik dus ook youtube video's van gekeken en heb ik code voorbeelden opgezocht op codepen maar ook dit kreeg ik niet voor elkaar, want deze moet net zoals de carroussels ook een timer hebben aan de bovenkant. 
 
+ Ook had ik wel moeite met het vinden van de animatie die ik moest plaatsen om de verschillende plaatjes automatisch te laten bewegen, maar teon ik dit had gevonden vond ik het wel heel vet om te zien dat je dat gewoon met code kan maken. 
 
+ Wat ook niet is gelukt, zijn de waves die je zou moeten zijn als je scrollt naar beneden waar blokjes dan van een wave weer recht worden, hier heb ik eerlijk gezegd nog helemaal niet naar gekeken want daar had ik geen tijd voor. 
 
+ Ook had ik geen tijd voor de surfaceplane en de light en darkmode. 
+
+ 
 
 ## Bronnenlijst
 
@@ -306,6 +335,12 @@ vragen:
   5. https://www.w3schools.com/css/css3_shadows_box.asp --> voor het shadow box element
   6. https://www.w3schools.com/howto/howto_css_custom_checkbox.asp --> radio buttons
   7. https://chatgpt.com/c/6750b15b-a63c-800b-bb77-b01b53d885f9 --> radiobuttons / checkbox en input veld email
+  8. https://codepen.io/shooft/pen/VwJXNEg --> voor mijn hamburgermenu
+  9. chatgpt voor mijn hamburgermenu
+  10. https://codepen.io/ericmahoney/pen/eYZwWzN voor mijn hamburgermenu
+  11. https://codepen.io/shooft/pen/JjQLVeB voor mijn hamburgermenu button
+  12. https://www.w3schools.com/tags/att_input_type_submit.asp voor input type submit				
+  12.  https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMI5KTjyOeaigMVqDsGAB268gnzEAAYASAAEgJmivD_BwE	voor grid-row-column code
 
 
 </details>

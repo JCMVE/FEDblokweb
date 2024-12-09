@@ -1,6 +1,17 @@
 
-// tekst in beeld laten komen effect
 
+// hamburgermenu
+const menu = document.querySelector("nav ul");
+const button = document.querySelector("nav button");
+  
+button.onclick = toggleButton;
+  
+function toggleButton() {
+  button.classList.toggle("open");
+  menu.classList.toggle("open");
+}
+
+// tekst in beeld laten komen effect
 document.addEventListener("DOMContentLoaded", () => {
     const targets = document.querySelectorAll(".hidden"); // Selecteer alle elementen die de class "hidden" hebben
   
@@ -22,23 +33,44 @@ document.addEventListener("DOMContentLoaded", () => {
     targets.forEach((target) => observer.observe(target)); // Observe each target element
   });
 
-  // hamburgermenu
 
-// Selecteer de elementen
-const button = document.querySelector('nav button');
-const menu = document.querySelector('nav ul');
+// Carousel // 
 
-// Voeg een klik-event toe aan de button
-button.addEventListener('click', () => {
-    // Toggle de aria-expanded waarde
-    const isExpanded = button.getAttribute('aria-expanded') === 'true';
-    button.setAttribute('aria-expanded', !isExpanded);
-    
-    // Toggle de 'active' class op het menu
-    menu.classList.toggle('active');
-});
 
-// Carousel
+
+
+
+
+
+
+// const carousel = document.querySelector('.carouselhome ul');
+// const slides = document.querySelectorAll('.carouselhome li');
+// const vorigeButton = document.querySelector('.carouselhome button:nth-of-type(1)');
+// const volgendeButton = document.querySelector('.carouselhome button:nth-of-type(2)');
+// let index = 0;
+
+// function showSlide(newIndex) {
+//   // Zorg ervoor dat de index binnen de grenzen blijft
+//   if (newIndex < 0) {
+//     index = slides.length - 1; // Ga naar de laatste slide
+//   } else if (newIndex >= slides.length) {
+//     index = 0; // Ga naar de eerste slide
+//   } else {
+//     index = newIndex;
+//   }
+
+//   // Verschuif de carousel
+//   const offset = -index * 100; // 100% per slide
+//   carousel.style.transform = `translateX(${offset}%)`;
+// }
+
+// // Event listeners voor de knoppen
+// vorigeButton.addEventListener('click', () => showSlide(index - 1));
+// volgendeButton.addEventListener('click', () => showSlide(index + 1));
+
+
+
+
 
 
 
