@@ -633,6 +633,35 @@ ul{
 		top: 0em;
 	}
 
+	/* Nu in blijdorp */
+
+	.nu{
+		position: relative;
+		z-index: 2;
+		background-color: white;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, .14);  /* box-shadow element van https://www.w3schools.com/css/css3_shadows_box.asp de code die er achter staan van de css van de blijdorp website (https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMInr_XyvKNigMVUaKDBx3otgN9EAAYASAAEgIh0vD_BwE)*/
+		border-radius: 1em;
+		padding: 1em;
+		height: 21em;
+		margin: 1em;
+	}
+
+	.nu h2{
+		font-weight: 900;
+	}
+
+	.nu a{
+		position:absolute;
+		bottom: 1em;
+		left: 1.5em;
+		color: black;
+		border-color: rgb(43 163 99);
+	}
+
+
+
+	/* doneren stukje */
+
 	.doneren{
 	position: relative;
 	}
