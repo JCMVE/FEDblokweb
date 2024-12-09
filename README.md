@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  Julia van Eekelen
 
   #### Je startniveau:
-  Mijn startniveau is blauw, maar ook proberen om een beetje rood te doen. 
+  Mijn startniveau is blauw
 
   #### Je focus:
   surface plane
@@ -289,7 +289,7 @@ vragen:
   Ook had ik geen tijd meer om het laatste deel te maken van de footer met de social media enzo. 
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -341,6 +341,8 @@ Ook heb ik geleerd om te werken met gradient, ik had namelijk vlakken en buttons
   11. https://codepen.io/shooft/pen/JjQLVeB voor mijn hamburgermenu button
   12. https://www.w3schools.com/tags/att_input_type_submit.asp voor input type submit				
   12.  https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMI5KTjyOeaigMVqDsGAB268gnzEAAYASAAEgJmivD_BwE	voor grid-row-column code
+  13. https://codepen.io/studiojvla/pen/qVbQqW voor slider
+  14. https://codepen.io/shooft/pen/yLKjzWa gebruikt voor carroussel maar werkt / lukt niet
 
 
 </details>

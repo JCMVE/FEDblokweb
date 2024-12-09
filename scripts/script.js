@@ -1,6 +1,6 @@
 
 
-// hamburgermenu
+// hamburgermenu bron: https://codepen.io/shooft/pen/VwJXNEg 
 const menu = document.querySelector("nav ul");
 const button = document.querySelector("nav button");
   
@@ -11,7 +11,7 @@ function toggleButton() {
   menu.classList.toggle("open");
 }
 
-// tekst in beeld laten komen effect
+// tekst in beeld laten komen effect  bron: https://codepen.io/TheSupermazter/pen/ogvNvwJ
 document.addEventListener("DOMContentLoaded", () => {
     const targets = document.querySelectorAll(".hidden"); // Selecteer alle elementen die de class "hidden" hebben
   
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-// Carousel // 
+// Carousel //  bron: Chatgpt en https://codepen.io/shooft/pen/yLKjzWa 
 
 
 
