@@ -11,7 +11,7 @@ function toggleButton() {
   menu.classList.toggle("open");
 }
 
-// tekst in beeld laten komen effect  bron: https://codepen.io/TheSupermazter/pen/ogvNvwJ
+// tekst in beeld laten komen effect  bron: https://codepen.io/shooft/pen/mdBOZLz 
 document.addEventListener("DOMContentLoaded", () => {
     const targets = document.querySelectorAll(".hidden"); // Selecteer alle elementen die de class "hidden" hebben
   
@@ -32,127 +32,179 @@ document.addEventListener("DOMContentLoaded", () => {
     targets.forEach((target) => observer.observe(target)); 
   });
 
-  // Carousel //  bron: Chatgpt en https://codepen.io/shooft/pen/yLKjzWa 
-
-  function createCaroCarrousel() {
-    const carousel = document.querySelector(".carouselhome"); // De carousel container
-    const images = carousel.querySelectorAll("img"); // Alle afbeeldingen
-    const prevButton = carousel.querySelector(".vorige"); // Vorige knop
-    const nextButton = carousel.querySelector(".volgende"); // Volgende knop
+  // Carousel 1//  bron: Chatgpt en https://codepen.io/shooft/pen/yLKjzWa 
+  function createLevelsCarrousel(carrouselID) {
+    let carrousel = document.querySelector("#" + carrouselID);
+    let carrouselElementsContainer = carrousel.querySelector(":scope > ul");
+    let carrouselElements = carrouselElementsContainer.querySelectorAll("li");
+    let linkButtons = carrousel.querySelectorAll(":scope > div a");
   
-    let currentIndex = 0; // Startpositie van de carousel
-  
-    // Functie: Startpositie instellen
-    function iniStartPosition() {
-        // Maak alle afbeeldingen onzichtbaar
-        images.forEach((img) => img.classList.remove("actief"));
-        // Maak de eerste afbeelding zichtbaar
-        images[currentIndex].classList.add("actief");
-    }
-  
-    // Functie: Huidige afbeelding bijwerken
-    function updateCurrentElement(newIndex) {
-        // Verwijder de huidige class van alle afbeeldingen
-        images.forEach((img) => img.classList.remove("actief"));
-        // Voeg de huidige class toe aan de nieuwe afbeelding
-        images[newIndex].classList.add("actief");
-        // Update de index
-        currentIndex = newIndex;
-    }
-  
-    // Functie: Naar volgende/vorige afbeelding gaan
-    function goToElement(direction) {
-        let newIndex;
-        if (direction === "previous") {
-            newIndex = (currentIndex - 1 + images.length) % images.length; // Vorige afbeelding
-        } else {
-            newIndex = (currentIndex + 1) % images.length; // Volgende afbeelding
-        }
-        updateCurrentElement(newIndex); // Update de huidige afbeelding
-    }
-  
-    // Functie: EventListeners voor de knoppen
+    /********** Vorige/volgende knoppen **********/
+    // de links/rechts link-buttons initialiseren en activeren
     function iniLinkButtons() {
-        prevButton.addEventListener("click", () => {
-            goToElement("previous"); // Ga naar de vorige afbeelding
-        });
+      for (let linkButton of linkButtons) {
+        // Beide link-buttons laten luisteren naar kliks
+        linkButton.addEventListener("click", function (e) {
+          // Als er geklikt wordt
+          // de default-actie (de link volgen) niet uitvoeren
+          e.preventDefault();
   
-        nextButton.addEventListener("click", () => {
-            goToElement("next"); // Ga naar de volgende afbeelding
+          // Bepalen of er op 'vorige' of 'volgende' geklikt is
+          let direction = this.getAttribute("href");
+          // Naar het element gaan
+          goToElement(direction);
         });
+      }
     }
   
-    // Initialiseer de carousel
-    iniStartPosition(); // Zet de startpositie
-    iniLinkButtons(); // Activeer de knoppen
+    /********** START POSITIE **********/
+    function iniStartPosition() {
+      // Het eerste element en bolletje actief maken
+      carrouselElements[0].classList.add("current"); // Eerste element current maken
+      carrouselElementsContainer.scrollLeft = 0; // Aan het begin van de container starten
+    }
+  
+    /********** ALGEMENE FUNCTIES **********/
+    //////////////////////////////////
+    // Naar volgende/vorige element //
+    function goToElement(direction) {
+      let currentElement = carrousel.querySelector(":scope > ul > .current"); // Het huidige current element opzoeken
+      let newElement;
+      if (direction === "vorige") {
+        newElement = currentElement.previousElementSibling; // Het nieuwe element is het vorige broertje/zusje
+        if (!newElement) {
+          newElement = carrousel.querySelector(":scope > ul > li:last-of-type"); // Checken of nieuwe element bestaat - anders naar laatste
+        }
+      } else {
+        newElement = currentElement.nextElementSibling; // Het nieuwe element is het volgende broertje/zusje
+        if (!newElement) {
+          newElement = carrousel.querySelector(":scope > ul > li:first-of-type"); // Checken of nieuwe element bestaat - anders naar eerste
+        }
+      }
+      scrollToElement(newElement); // Naar het nieuwe element scrollen
+    }
+  
+    ///////////////////////////
+    // Scroll naar nieuw element //
+    function scrollToElement(newElement) {
+      let newElementOffset = newElement.offsetLeft; // De linker offset van het nieuwe element bepalen
+  
+      carrouselElementsContainer.scrollTo({
+        left: newElementOffset, // De carrousel naar de berekende positie scrollen
+        behavior: "smooth",
+      });
+  
+      updateCurrentElement(newElement); // Nieuwe element current element maken
+    }
+  
+    ////////////////////////////
+    // Update current element //
+    function updateCurrentElement(newElement) {
+      let currentElement = carrousel.querySelector(":scope > ul > .current"); // Het huidige current element opzoeken
+      currentElement.classList.remove("current"); // De class current verwijderen
+      newElement.classList.add("current"); // Aan nieuwe element de class current toevoegen
+    }
+  
+    /********** INITIALISATIE **********/
+    iniLinkButtons(); // De knoppen initialiseren
+    iniStartPosition(); // De startpositie instellen
   }
   
-  // Carrousel activeren bij pagina-laden
-  document.addEventListener("DOMContentLoaded", () => {
-    createCaroCarrousel();
-  });
-
-
-  // Carousel 2 ook met de vorige en volgende buttons //  bron: Chatgpt en https://codepen.io/shooft/pen/yLKjzWa 
-
-  function createCaroCarrousel2() {
-    const carousel = document.querySelector(".locatie"); // De carousel container
-    const images = carousel.querySelectorAll("img"); // Alle afbeeldingen
-    const prevButton = carousel.querySelector(".vorige"); // Vorige knop
-    const nextButton = carousel.querySelector(".volgende"); // Volgende knop
+  /********** DE CARROUSEL CREËREN **********/
+  (function () {
+    // Nadat de pagina geladen is, de carrousels activeren
+    createLevelsCarrousel("justButtons"); // Hier de ID gebruiken van de section in de HTML
+  })();
   
-    let currentIndex = 0; // Startpositie van de carousel
   
-    // Functie: Startpositie instellen
-    function iniStartPosition() {
-        // Maak alle afbeeldingen onzichtbaar
-        images.forEach((img) => img.classList.remove("actief"));
-        // Maak de eerste afbeelding zichtbaar
-        images[currentIndex].classList.add("actief");
+
+
+  // Carousel 2 ook met de vorige en volgende buttons //  bron: Chatgpt en  https://codepen.io/shooft/pen/mdBOZLz 
+
+  function createLevelsCarrousel(carrouselID2) {
+    let carrousel2 = document.querySelector("#" + carrouselID2);
+    let carrouselElementsContainer2 = carrousel2.querySelector(":scope > ul");
+    let carrouselElements2 = carrouselElementsContainer2.querySelectorAll("li");
+    let linkButtons2 = carrousel2.querySelectorAll(":scope > div:nth-of-type(1) a");
+  
+    /********** Vorige/volgende knoppen **********/
+    // de links/rechts link-buttons initialiseren en activeren
+    function iniLinkButtons2() {
+      for (let linkButton2 of linkButtons2) {
+        // Beide link-buttons laten luisteren naar kliks
+        linkButton2.addEventListener("click", function (e) {
+          // Als er geklikt wordt
+          // de default-actie (de link volgen) niet uitvoeren
+          e.preventDefault();
+  
+          // Bepalen of er op 'vorige' of 'volgende' geklikt is
+          let direction = this.getAttribute("href");
+          // Naar het element gaan
+          goToElement2(direction);
+        });
+      }
     }
   
-    // Functie: Huidige afbeelding bijwerken
-    function updateCurrentElement(newIndex) {
-        // Verwijder de huidige class van alle afbeeldingen
-        images.forEach((img) => img.classList.remove("actief"));
-        // Voeg de huidige class toe aan de nieuwe afbeelding
-        images[newIndex].classList.add("actief");
-        // Update de index
-        currentIndex = newIndex;
+    /********** START POSITIE **********/
+    function iniStartPosition2() {
+      // Het eerste element en bolletje actief maken
+      carrouselElements2[0].classList.add("current"); // Eerste element current maken
+      carrouselElementsContainer2.scrollLeft = 0; // Aan het begin van de container starten
     }
   
-    // Functie: Naar volgende/vorige afbeelding gaan
-    function goToElement(direction) {
-        let newIndex;
-        if (direction === "previous") {
-            newIndex = (currentIndex - 1 + images.length) % images.length; // Vorige afbeelding
-        } else {
-            newIndex = (currentIndex + 1) % images.length; // Volgende afbeelding
+    /********** ALGEMENE FUNCTIES **********/
+    //////////////////////////////////
+    // Naar volgende/vorige element //
+    function goToElement2(direction) {
+      let currentElement2 = carrousel2.querySelector(":scope > ul > .current"); // Het huidige current element opzoeken
+      let newElement2;
+      if (direction === "vorige") {
+        newElement2 = currentElement2.previousElementSibling; // Het nieuwe element is het vorige broertje/zusje
+        if (!newElement2) {
+          newElement2 = carrousel2.querySelector(":scope > ul > li:last-of-type"); // Checken of nieuwe element bestaat - anders naar laatste
         }
-        updateCurrentElement(newIndex); // Update de huidige afbeelding
+      } else {
+        newElement2 = currentElement2.nextElementSibling; // Het nieuwe element is het volgende broertje/zusje
+        if (!newElement2) {
+          newElement2 = carrousel2.querySelector(":scope > ul > li:first-of-type"); // Checken of nieuwe element bestaat - anders naar eerste
+        }
+      }
+      scrollToElement2(newElement2); // Naar het nieuwe element scrollen
     }
   
-    // Functie: EventListeners voor de knoppen
-    function iniLinkButtons() {
-        prevButton.addEventListener("click", () => {
-            goToElement("previous"); // Ga naar de vorige afbeelding
-        });
+    ///////////////////////////
+    // Scroll naar nieuw element //
+    function scrollToElement2(newElement2) {
+      let newElementOffset2 = newElement2.offsetLeft; // De linker offset van het nieuwe element bepalen
   
-        nextButton.addEventListener("click", () => {
-            goToElement("next"); // Ga naar de volgende afbeelding
-        });
+      carrouselElementsContainer2.scrollTo({
+        left: newElementOffset2, // De carrousel naar de berekende positie scrollen
+        behavior: "smooth",
+      });
+  
+      updateCurrentElement2(newElement2); // Nieuwe element current element maken
     }
   
-    // Initialiseer de carousel
-    iniStartPosition(); // Zet de startpositie
-    iniLinkButtons(); // Activeer de knoppen
+    ////////////////////////////
+    // Update current element //
+    function updateCurrentElement2(newElement2) {
+      let currentElement2 = carrousel2.querySelector(":scope > ul > .current"); // Het huidige current element opzoeken
+      currentElement2.classList.remove("current"); // De class current verwijderen
+      newElement2.classList.add("current"); // Aan nieuwe element de class current toevoegen
+    }
+  
+    /********** INITIALISATIE **********/
+    iniLinkButtons2(); // De knoppen initialiseren
+    iniStartPosition2(); // De startpositie instellen
   }
   
-  // Carrousel activeren bij pagina-laden
-  document.addEventListener("DOMContentLoaded", () => {
-    createCaroCarrousel2();
-  });
-
+  /********** DE CARROUSEL CREËREN **********/
+  (function () {
+    // Nadat de pagina geladen is, de carrousels activeren
+    createLevelsCarrousel("locatie"); // Hier de ID gebruiken van de section in de HTML
+  })();
+  
+  
 
   // automatische verandering van carousel bron: Chatgpt prompt: hoe zorg ik ervoor dat mijn afbeeldingen automatisch naar de volgende afbeelding gaan en het een autoplay creeërt. 
 

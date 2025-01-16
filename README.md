@@ -334,7 +334,14 @@ Ook heb ik geleerd om te werken met gradient, ik had namelijk vlakken en buttons
  Vandaag (28 december) ben ik weer gaan kijken naar de vormgeving en ben ik bezig geweest met de overlay op sommige afbeeldingen de scroll afbeeldingen moesten namelijk 3 verschillende kleuren ik had hier al een keer een begin aan gemaakt maar toen kwam de kleur niet naar voren nu heb ik het nog een keer geprobeerd en het lukte ik had namelijk nog een keer naar de code die ik een keer al had gebruikt voor een andere overlay gekeken en toen ben ik gewoon wat dingen gaan proberen en uiteindelijk was het gelukkig wel gelukt en bleek het niet zo moeilijk te zijn. 
 
 Ik ben weer bezig geweest met de carousels vandaag (29 december), ik heb ervoor gezorgd dat de autoplay afbeeldingen het doen en dat mijn 2e carousel aan de onderkant van de pagina met de buttons het ook doen. Als eerste ben ik bezig geweest met de autoplay afbeeldingen, ik had het opzetje al eerder gemaakt ik moest alleen nog de javascript toepassen aan het stukje en toen ik dat had gedaan werkte het (met hulp van chatgpt) en was ik daar wel heel blij. Daarna ben ik bezig gegaan met mijn 2e carousel met buttons. Omdat ik dat al een keer eerder had gedaan ging mij dit wel gemakkelijker af alleen liep ik ook wel tegen een paar dingen weer aan. Als eerste was ik vergeten om in de javscript mijn buttons goed aan te roepen ik was namelijk de punten voor de class namen vergeten waardoor het natuurlijk niet werkte want die punt hoort erbij als je iets een class gaf. Nou toen ik hier achter kwam werkte het klikken van de buttons wel alleen stonden de afbeeldingen nu onder elkaar en niet in 1 container. Dus toen heb ik een div aangemaakt waardoor ik er een width en height aan kon geven waardoor de afbeeldingen op dezelfde plek kwamen te staan. 
- 
+
+Het is vandaag 16 januari en ik ben vandaag met best veel dingen bezig geweest, als eerste heb ik de footer afgemaakt. Ik had namelijk het laatste donkerblauwe stuk nog niet toegevoegd dus dat heb ik nu wel gedaan. Dit ging eigenlijk best wel makkelijk alleen het opzoeken van de svg duurde even. Het facebook logo kon ik ook niet vinden in de witte kleur dus heb ik een filter invert daarop gebruikt zodat die van zwart naar wit ging. 
+
+Daarna heb ik nog een paar kleine gedaan, zoals het dikker maken van een border van een linkje. 
+Ook heb ik vandaag eindelijk de witruimte aan de zijkant weg gekregen, dit was al een paar dagen zo omdat er een element langer was dan moest zijn. Ik kwam er dus achter dat er een margin zat op een p element waardoor die langer was dan het beeld en daardoor die witruimte er was. 
+Hier ben ik achter gekomen door alle elementen te bekijken en kijken welke dus buiten de main ging. Toen ik daar achter kwam was ik echt heel blij omdat ik hier al meerdere keren naar gekeken had en het steeds niet kon vinden. 
+
+Ook heb ik vandaag de carousel echt werkend gekregen hoe ik het wilde!!! IK BEN HIER ZO BLIJ MEE. Ik heb namelijk echt zoveel keer naar de code van de codepen gekeken en steeds lukte het niet en ik snapte niet wat ik verkeerd deed. Toen heb ik aan chatgpt gevraagd wat ik zou kunnen doen en deze had toen een hele andere code gegeven maar wat hier het ding was is dat de img elementen verdwenen als je door elk element heen was. Toch voelde het ook niet echt goed om alles zo van chatgpt over te nemen en wilde ik echt nog een keer kijken naar de code van codepen. Ik heb echt meerdere malen dit geprobeerd maar steeds lukte het nie, want of de afbeeldingen gingen niet naast elkaar om de knoppen werkte niet. Nu had ik extra lang gekeken naar de code op codepen en wat ik wel en niet moest gaan gebruiken en ben ik letterlijk elk regeltje gaan kijken of ik iets had gemist of nog moest toevoegen. Op een gegeven moment stond de img elementen er en de buttons om naar de volgende en vorige afbeelding te gaan ook. Alleen gaven die buttons een error namelijk: cannot GET / volgende of cannot GET / vorige en ik snapte niet waarom want de buttons stonden wel gewoon gelinkt in de javascript. Toen heb ik wel aan chatGpt gevraagd wat er mis gaat. Ik heb gezegd welke error melding naar voren kwam en heb mijn code erin gezet en toen kwam ik er dus achter dat de fout in de javascript zat en er iets fout was met de addEventListener, dit heb ik veranderd en toen deed de carousel het eindelijk!!!!!
 
 ## Bronnenlijst
 
@@ -359,7 +366,7 @@ Ik ben weer bezig geweest met de carousels vandaag (29 december), ik heb ervoor 
   12. https://www.w3schools.com/tags/att_input_type_submit.asp voor input type submit				
   12.  https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMI5KTjyOeaigMVqDsGAB268gnzEAAYASAAEgJmivD_BwE	voor grid-row-column code
   13. https://codepen.io/studiojvla/pen/qVbQqW voor slider
-  14. https://codepen.io/shooft/pen/yLKjzWa gebruikt voor carroussel maar werkt / lukt niet
+  14. https://codepen.io/shooft/pen/yLKjzWa gebruikt voor carroussel 
   15. https://codepen.io/shooft/pen/xxozyVW gebruikt voor dark mode 
   16. https://codepen.io/shooft/pen/mdBOZLz  en Chatgpt gebruikt voor carousel / nu werkt het wel maar is de afbeelding na een paar keer klikken niet zichtbaar. 
   17. Eigenlijk gekeken naar oude code voor geluid, maar toen deze bron gebruikt: https://youtu.be/3xlws5og44U?feature=shared
@@ -371,6 +378,7 @@ Ik ben weer bezig geweest met de carousels vandaag (29 december), ik heb ervoor 
   23. bron linkedin logo: https://uxwing.com/linkedin-app-white-icon/
   24. bron youtube logo: https://uxwing.com/youtube-app-white-icon/
   25. bron facebook logo: https://www.svgrepo.com/svg/3885/facebook
+  26. https://codepen.io/shooft/pen/mdBOZLz voor carousel
 
   
 

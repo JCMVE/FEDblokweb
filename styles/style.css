@@ -386,60 +386,76 @@ ul{
 		padding: 0.8em;
 		}
 
-	/* Carousels*/
+	/* Carousels bron: */
 
-	.carouselhome{
+	.carouselhome {
 		position: relative;
+		outline: none;
+	}
+
+	.carouselhome > ul{
+		list-style: none;
 		display: flex;
 		overflow: hidden;
+		flex-direction: row;
+		object-fit: contain;
 		margin-top: 3em;
-		width: 100%;
-    	height: 12em; 
-		justify-content: center;
 	}
-
-	.carouselhome img{
-		position: absolute;
-		width: 24em;
-		height: 12em;
-		border-radius: 1em;
+	
+	.carouselhome > ul li {
+		flex-basis: 100%;
+		flex-shrink: 0;
+		scroll-snap-align: center;
+		position: relative;
+	}
+	
+	.carouselhome > ul li > img {
+		border-radius: 0.75em;
+		margin-bottom: 0.5em;
+		left: 0.5em;
 		object-fit: cover;
 		object-position: center;
-		opacity: 0;
+		width: 25em;
+		height: 12em;
+		position: relative;
 	}
 
-	.carouselhome img.actief{
-		opacity: 1;
-		z-index: 1;
-	}
-
-	.carouselhome button{
+	/* Vorige en volgende knoppen */
+	.carouselhome div{
+		display: flex;
 		position: absolute;
-		border-radius: 999em;
-		padding: 1em;
-		background-color: transparent;
-		border: solid;
-		border-color: white;
-	}
-
-	.carouselhome button img{
-		width: 3em;
-		height: 1em;
-		color: white;
-		filter:brightness(20);
-		opacity: 1;
-	}
-
-	.vorige{
-		right: 7em;
-		top: 10em;
-
-	}
-
-	.volgende{
+		bottom: 1.5em;
 		right: 2em;
-		top: 10em;
+		gap: 1em;
+		color: white;
 	}
+
+	.carouselhome > div a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2.75em;
+		height: 2.75em;
+		aspect-ratio: 1 / 1;
+		outline: none;
+		transition: 0.5s;
+		border-color: hsla(0, 0%, 100%, .3);
+	}
+
+	.carouselhome div img{
+		filter: invert(1);
+	}
+	
+	.carouselhome > div a img {
+		width: 1.5em;
+		height: 1.5em;
+	}
+	
+	.carouselhome > div a:focus {
+		color: var(--caroCarrouselAccentColor);
+	}
+
+	/* Carousel 2 (automatisch)*/
 
 	.carousel2{
 		position: relative;
@@ -881,85 +897,128 @@ ul{
 		margin: 1em;
 	}
 
-	/* locatie elementen */
+	/* 2e carousel */
 
-	.locatie{
-		background-image: linear-gradient( #006cb3, #004877);
-		margin-top: 5em;
-		padding-bottom: 5em;
+	
+	/* Carousel 2 */
+
+	.carousellocatie {
 		position: relative;
+		outline: none;
+		background-image: linear-gradient( #006cb3, #004877);
+		border-radius: 0.5em;
+		padding-bottom: 8em;
 	}
 
-	.locatie img{
-		position: absolute;
+	.carousellocatie > ul{
+		list-style: none;
+		display: flex;
+		overflow: hidden;
+		flex-direction: row;
+		margin-top: 3em;
+	}
+	
+	.carousellocatie > ul li {
+		flex-basis: 100%;
+		flex-shrink: 0;
+		scroll-snap-align: center;
+		position: relative;
+	}
+	
+	.carousellocatie > ul li > img {
 		border-radius: 1em;
 		object-fit: cover;
 		object-position: center;
-		opacity: 0;
-		margin-top: 1em;
-	}
-
-	.locatie img.actief{
-		opacity: 1;
-		z-index: 1;
-	}
-/* Voor de opmaak van het carousel en een container daarvan te maken waar de images in moeten blijven */
-	.carousellocatie{
+		width: 23em;
+		height: 10em;
 		position: relative;
-		width: 24em; 
-		height: 12em; 
-		margin: auto;
-		overflow: hidden;
-}
-
-	.locatie div:nth-of-type(2){
-		position: relative;
-		background-color: white;
-		border-radius: 1em;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, .14);
-		padding-top: 1em;
-		margin: 1em;
-		height: 16em;
+		left: 1.4em;
+		margin-top: 4em;
 	}
 
-	.locatie div h2{
-		font-weight: 900;
-		width: 15em;
-	}
-
-	.locatie div p{
-		position: relative;
-		left: 0.5em;
-		font-size: 0.875em;
-	}
-
-	.locatie div a{
-	position: absolute;
-	color: black;
-	border-color: rgb(43 163 99);
-	left: 1em;
-	}
-
-	/* Buttons waarmee er door de afbeeldingen kan worden geklikt */
-	.locatie button{
+	/* Vorige en volgende knoppen */
+	.carousellocatie div:nth-of-type(1){
+		display: flex;
 		position: absolute;
-		border-radius: 999em;
-		padding: 1em;
-		background-color: transparent;
-		border: solid;
-		border-color: white;
-	}
-
-	.locatie button img{
-		position: absolute;
-		top: 0;
-		object-fit: cover;
-		width: 3em;
-		height: 1em;
+		top: 10em;
+		right: 2em;
+		gap: 1em;
 		color: white;
-		filter:brightness(20);
-		opacity: 1;
 	}
+
+	.carousellocatie > div:nth-of-type(1) a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2.75em;
+		height: 2.75em;
+		aspect-ratio: 1 / 1;
+		outline: none;
+		transition: 0.5s;
+		border-color: hsla(0, 0%, 100%, .3);
+	}
+
+	.carousellocatie div img{
+		filter: invert(1);
+	}
+	
+	.carousellocatie > div a img {
+		width: 1.5em;
+		height: 1.5em;
+	}
+	
+	.carousellocatie > div a:focus {
+		color: var(--caroCarrouselAccentColor);
+	}
+
+	/* locatie stukje */
+
+	.carousellocatie div.hidden{
+		background-color: white;
+		color: black;
+		position: relative;
+		border-radius: 1em;
+		width: 23em;
+		left: 1.4em;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, .14);  /* box-shadow element van https://www.w3schools.com/css/css3_shadows_box.asp de code die er achter staan van de css van de blijdorp website (https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMInr_XyvKNigMVUaKDBx3otgN9EAAYASAAEgIh0vD_BwE)*/
+		padding: 0.5em;
+		margin-top: 1em;
+		padding-bottom: 5em;
+	}
+
+	.carousellocatie div.hidden h2{
+		font-weight: 900;
+		font-size: 1.5em;
+		padding-left: 0.5em;
+	}
+
+	.carousellocatie div.hidden p{
+		font-size: 0.875em;
+		width: 26em;
+		line-height: 1.25em ;
+	}
+
+	.carousellocatie div.hidden a{
+		color: black;
+		width: 10em;
+		border-color: rgb(43 163 99);
+		border-width: 0.15em;
+		position: absolute;
+		left: 1em;
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+	}
+
+
+
+
+
+
+
+
+
+	
 
 	/* nieuwsbrief container */
 
@@ -1161,8 +1220,6 @@ ul{
 	background-image: linear-gradient( #128948 , #3db977);
 	min-height: 40em;  /* De achtergrondkleur liet hij niet zien dus aan ChatGPT gevraagd waardoor dit zou komen, toen kwam eruit dat ik min-height zou kunnen gebruiken*/
 	margin-top: 3em;
-	border-radius: 0.5em;
-
 }
 
 .contact img{

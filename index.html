@@ -89,14 +89,24 @@
 				<a class="button-gradient" href="#"> Lees hier meer</a>
 		</section>
 
-		 <section class="carouselhome" aria-label="carousel met dieren"> 
-			<img src="images/blijegiraffe.jpg" alt="blije giraffe" />
-			<img src="images/rodepandafamilie.jpg" alt="een familie van 3 rode panda's in een boom" />
-			<img src="images/jongegiraffe.jpeg" alt="jonge giraffe in verblijf" />
-			<img src="images/rodepandaboom.jpg" alt="2 rode panda's in een boom" />
+		 <section id="justButtons" class="carouselhome" aria-label="carousel met dieren" tabindex="-1"> <!--bron: https://codepen.io/shooft/pen/mdBOZLz -->
+			<ul>
+				<li><img src="images/blijegiraffe.jpg" alt="blije giraffe" /></li>
+				<li><img src="images/rodepandafamilie.jpg" alt="een familie van 3 rode panda's in een boom" /></li>
+				<li><img src="images/jongegiraffe.jpeg" alt="jonge giraffe in verblijf" /></li>
+				<li><img src="images/rodepandaboom.jpg" alt="2 rode panda's in een boom" /></li>
+			  </ul>
 
-			<button class="vorige"><img src="images/previouspijl.svg" alt="vorige pijl icoon om terug te gaan naar vorige afbeelding"></button>
-			<button class="volgende"><img src="images/nextpijl.svg" alt="volgende pijl icoon om verder te gaan naar de volgende afbeelding"></button>
+			  <div>
+					<a href="vorige" aria-label="Ga naar de vorige afbeelding">
+						<img src="images/previouspijl.svg" alt="pijl naar links">
+					</a>
+					<a href="volgende" aria-label="Ga naar de volgende afbeelding">
+						<img src="images/nextpijl.svg" alt="pijl naar rechts">
+					</a>
+			  </div>
+
+			  
 		</section>
 
 		<section class="nu">
@@ -149,7 +159,7 @@
 					<p>Diergaarde Blijdorp zet zich in voor soort- en natuurbehoud
 						van wereldwijde soorten en gebieden. </p>
 				
-		<section class="carousel2" aria-label="autoplay carousel met dieren en de omgeving van het dierenpark.">
+		 <section class="carousel2" aria-label="autoplay carousel met dieren en de omgeving van het dierenpark."> <!--bron: https://codepen.io/shooft/pen/mdBOZLz -->
 				<img src="images/tijger2.jpg" alt="tijger van dichtbij">
 				<img src="images/ingang.jpg" alt="ingang van het dierenpark">
 				<img src="images/eieren.jpg" alt="eieren die in een la liggen">
@@ -245,20 +255,25 @@
 					<a class="button-gradient" href="#">Meer nieuws</a>
 		</section>
 
-		<section class="locatie">
-			<div class="carousellocatie">
-				<img src="images/haaienzaal.jpeg" alt="haaienzaal met glazen op de voorgrond">
-				<img src="images/terraszaal.png" alt="de terraszaal waar mensen een evenement kunnen houden">
+		<section id="locatie" class="carousellocatie" aria-label="carousel met dieren" tabindex="-1">
+			<ul>
+				<li><img src="images/haaienzaal.jpeg" alt="haaienzaal met glazen op de voorgrond"></li>
+				<li><img src="images/terraszaal.png" alt="de terraszaal waar mensen een evenement kunnen houden"></li>
+			</ul>
 
-				<button class="vorige"><img src="images/previouspijl.svg" alt="vorige pijl icoon om terug te gaan naar vorige afbeelding"></button>
-				<button class="volgende"><img src="images/nextpijl.svg" alt="volgende pijl icoon om verder te gaan naar de volgende afbeelding"></button>
-			</div>
-
-			<div class="hidden">
+				<div>
+					<a href="vorige" aria-label="Ga naar de vorige afbeelding">
+						<img src="images/previouspijl.svg" alt="pijl naar links">
+					</a>
+					<a href="volgende" aria-label="Ga naar de volgende afbeelding">
+						<img src="images/nextpijl.svg" alt="pijl naar rechts">
+					</a>
+			  </div>
+			  <div class="hidden">
 				<h2>Boek een bijzondere locatie met impact</h2>
 				<p>Ontdek de Diergaarde op een totaal andere manier tijdens uw evenement. Van bedrijfspresentaties tot netwerkevenementen, en jubileumvieringen; alles is mogelijk.</p>
 				<a href="#">Plan je event</a>
-			</div>
+			  </div>
 		</section>
 
 		<section class="nieuwsbrief">
