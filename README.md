@@ -365,5 +365,13 @@ Ik ben weer bezig geweest met de carousels vandaag (29 december), ik heb ervoor 
   17. Eigenlijk gekeken naar oude code voor geluid, maar toen deze bron gebruikt: https://youtu.be/3xlws5og44U?feature=shared
   18. bron geluid olifant: Blijdorp.nl 
   19. Bron sneeuw gifje: https://www.zonova.nl/dl-27111-7-106458/download/sneeuwgif.html
+  20. bron tiktok logo: https://uxwing.com/tiktok-white-icon/
+  21. bron twitter logo: https://uxwing.com/x-social-media-white-icon/
+  22. bron instagram logo: https://uxwing.com/instagram-white-icon/
+  23. bron linkedin logo: https://uxwing.com/linkedin-app-white-icon/
+  24. bron youtube logo: https://uxwing.com/youtube-app-white-icon/
+  25. bron facebook logo: https://www.svgrepo.com/svg/3885/facebook
+
+  
 
 </details>
