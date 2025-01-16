@@ -14,10 +14,8 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
-	
-	
-	
 }
+
 
 /****************/
 /* JOUW STYLING */
@@ -27,6 +25,8 @@
 
 body {
 	font-family: "montserrat", sans-serif;
+	overflow-x: hidden;
+
 }
 
 #logo{
@@ -57,7 +57,7 @@ body {
  button {
 	display:grid;
   	place-items:center;
-	top: 1em;
+	top: 2em;
 	right: 3em;
 	position: absolute;
 	position: fixed;
@@ -68,6 +68,7 @@ body {
 	background-color: transparent;
 	border: none;
 	background: white;
+	z-index: 999;
   }
 
   button span{
@@ -122,8 +123,9 @@ header nav button.open span:nth-of-type(3) {
 	position: fixed;
 	position: relative;
 	width: 90%;
-	overflow: hidden;
-	justify-content: center;
+	height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
 	border-radius: 2em;
 	position: absolute;
 	background-color: white;
@@ -131,7 +133,6 @@ header nav button.open span:nth-of-type(3) {
 	z-index: 3;
 	opacity: 0;
 	visibility: hidden;
-	
 
 	/* animatie hamburger menu */
 	transform: translateY(-100%);
@@ -144,6 +145,7 @@ nav ul.open {
 	transform: translateY(0);
 	left: 1.25em;
 	position: absolute;
+	z-index: 10;
 
 }
 
@@ -164,24 +166,26 @@ nav ul li h3{
 	position: relative;
 	left: 1.25em;
 	font-weight: 900;
+	
 }
 
-/* Voor de vormgeving van de eerste 3 blokjes van het menu */
+/* Voor het vormgeven van het menu */
 
 .navbegin{
 	display: flex;
 	flex-direction: column;
 	gap: 0.5em;
-	margin-top: 5em;
+	margin-top: 1em;
 	margin-bottom: 1.5em;
+	
 }
 
-.navbegin a{
+.navbegin li{
 	position: relative;
-	left: 3em;
-	color: white;
-	font-weight: 900;
+	top: 5em;
 }
+
+/* Voor de vormgeving van de eerste 3 blokjes van het menu */
 
 .navbegin li:nth-of-type(1){
 	border-radius: 0.5em;
@@ -190,6 +194,13 @@ nav ul li h3{
 	padding: 1em;
 	margin-left: 2em;
 	margin-right: 2em;
+}
+
+.navbegin li:nth-of-type(1) a:nth-of-type(1){
+	position: relative;
+	left: 3em;
+	color: white;
+	font-weight: 900;
 }
 
 .navbegin li:nth-of-type(2){
@@ -201,6 +212,13 @@ nav ul li h3{
 	margin-right: 2em;
 }
 
+.navbegin li:nth-of-type(2) a:nth-of-type(1){
+	position: relative;
+	left: 3em;
+	color: white;
+	font-weight: 900;
+}
+
 .navbegin li:nth-of-type(3){
 	border-radius: 0.5em;
 	background-image: linear-gradient( #cf5107, #df5200); 
@@ -208,10 +226,18 @@ nav ul li h3{
 	padding: 1em;
 	margin-left: 2em;
 	margin-right: 2em;
+	margin-bottom: 2em;
 }
 
+.navbegin li:nth-of-type(3) a:nth-of-type(1){
+	position: relative;
+	left: 3em;
+	color: white;
+	font-weight: 900;
+}
 /* Voor de onderste linkjes die naast elkaar staan boven de streep */
 
+/* 
 nav div:nth-of-type(2) {
 	display: flex;
 	flex-wrap: wrap;
@@ -224,7 +250,7 @@ nav div:nth-of-type(2){
 	flex-wrap: wrap;
 	position: relative;
 	left: 2em;
-}
+} */
 
 
 h1{
@@ -284,7 +310,6 @@ ul{
 .begin-homepagina p{
 	color: white;
 	line-height: 1.5rem;
-	z-index: 1;
     position: relative;
 	top: 15em;
 	margin-top: 2em;
@@ -361,69 +386,153 @@ ul{
 		padding: 0.8em;
 		}
 
-	/* Carousel */
+	/* Carousels*/
 
-	/* .carouselhome{
+	.carouselhome{
 		position: relative;
-		outline: none;
-	}
-
-	.carouselhome > ul {
-		list-style: none;
 		display: flex;
 		overflow: hidden;
-		scroll-snap-type: inline mandatory;
-		scroll-behavior: smooth;
-		-webkit-overflow-scrolling: touch; /* voor iOS
-		-ms-overflow-style: none; /* voor IE 
-		scrollbar-width: none; /* voor Firefox 
-	}
-
-	.carouselhome > ul li:not(.carouselhome nav ul li){
-		flex-basis: 100%;
-		flex-shrink: 0;
-		scroll-snap-align: center;
-		position: relative;
-	}
-
-	.carouselhome> ul li > img {
-		display: block;
+		margin-top: 3em;
 		width: 100%;
-		height: 64vh;
-		object-position: center center;
-		object-fit: cover;
-	}
-
-	.carouselhome nav ul {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-		padding: 1em 0;
-		text-align: center;
-		overflow: hidden;
-		display: flex;
+    	height: 12em; 
 		justify-content: center;
-		gap: 1em;
-		list-style: none;
 	}
+
+	.carouselhome img{
+		position: absolute;
+		width: 24em;
+		height: 12em;
+		border-radius: 1em;
+		object-fit: cover;
+		object-position: center;
+		opacity: 0;
+	}
+
+	.carouselhome img.actief{
+		opacity: 1;
+		z-index: 1;
+	}
+
+	.carouselhome button{
+		position: absolute;
+		border-radius: 999em;
+		padding: 1em;
+		background-color: transparent;
+		border: solid;
+		border-color: white;
+	}
+
+	.carouselhome button img{
+		width: 3em;
+		height: 1em;
+		color: white;
+		filter:brightness(20);
+		opacity: 1;
+	}
+
+	.vorige{
+		right: 7em;
+		top: 10em;
+
+	}
+
+	.volgende{
+		right: 2em;
+		top: 10em;
+	}
+
+	.carousel2{
+		position: relative;
+		display: flex;
+		overflow: hidden;
+		margin-top: 1em;
+		width: 100%;
+    	height: 17em; 
+		justify-content: center;
+	}
+
+	.carousel2 img{
+		position: absolute;
+		width: 24em;
+		height: 17em;
+		border-radius: 1em;
+		object-fit: cover;
+		object-position: center;
+		opacity: 0;
+	}
+
+	.carousel2 img.actief{
+		opacity: 1;
+	}
+
+	/* wat we doen stukje */
 	
-	.carouselhome > nav li {
-		aspect-ratio: 1 / 1;
+	.watwedoen{
+		background-image: linear-gradient(#006cb3,#004877 );
+		padding-top: 1em;
+		color: white;
 	}
 
-	.carouselhome > nav a {
-		display: block;
-		width: 0.5em;
-		height: 0.5em;
-		text-decoration: none;
-		border-radius: 50%;
-		outline: none;
-		transition: 0.5s;
-	} */
+	.watwedoen p{
+		position: relative;
+		font-weight: 100;
+	}
 
+	.watwedoen div:nth-of-type(1){
+		position: relative;
+		background-color: white;
+		height: 15em;
+		border-radius: 1em;
+		width: 24em;
+		left: 1em;
+		align-items: center;
+		top: 2em;
+		padding-top: 1em;
+		overflow: hidden;
+	}
+
+	.watwedoen div:nth-of-type(1) a{
+		color: black;
+		opacity: 0.6;
+		margin-left: 1em;
+		display: flex;
+		position: relative;
+		border: none;
+		display: flex;
+	}
+
+	.watwedoen div:nth-of-type(2) a:nth-of-type(1){
+		position: relative;
+		display: flex;
+		width: 10em;
+		justify-content: center;
+		margin-top: 3em;
+	}
+
+	.watwedoen div:nth-of-type(2) a:nth-of-type(2){
+		position: relative;
+		display: flex;
+		width: 10em;
+		justify-content: center;
+		left: 1em;
+		margin-top: 0.5em;
+	}
+
+	/* opmaak achtergrond 10 soorten */
+
+	section:nth-of-type(9){
+		background-color: #004877;
+		color: white;
+		padding-top: 1em;
+		padding-bottom: 4em;
+	}
+
+	section:nth-of-type(6){
+		background-color:#eaf7f0;
+		padding-top: 0.5em;
+		position: relative;
+		padding-bottom: 3em;
+	}
 
 	/* Scroll afbeeldingen */
 
@@ -453,6 +562,7 @@ ul{
 	color: white;
 	font-size: 1.2em;
 	width: 10em;
+	z-index: 2;
 	}
 
 	ul.scroll > li:nth-of-type(2) h3{
@@ -462,6 +572,7 @@ ul{
 	color: white;
 	font-size: 1.2em;
 	width: 10em;
+	z-index: 2;
 	}
 
 	ul.scroll > li:nth-of-type(3) h3{
@@ -471,6 +582,7 @@ ul{
 		color: white;
 		font-size: 1.2em;
 		width: 10em;
+		z-index: 2;
 		}
 
 		ul.scroll > li:nth-of-type(1) a{
@@ -478,6 +590,7 @@ ul{
 		left: 2em;
 		bottom: 1em;
 		font-size: 1.2em;
+		z-index: 2;
 	}
 
 	ul.scroll > li:nth-of-type(2) a{
@@ -485,6 +598,7 @@ ul{
 		right: -1em;
 		bottom: 1em;
 		font-size: 1.2em;
+		z-index: 2;
 	}
 
 	ul.scroll > li:nth-of-type(3) a{
@@ -492,6 +606,7 @@ ul{
 		right: -15em;
 		bottom: 1em;
 		font-size: 1.2em;
+		z-index: 2;
 	}
 
 	/* app section */
@@ -500,8 +615,6 @@ ul{
 	position: relative;
 	background-color: #eaf7f0;
 	min-height: 40em;  /* De achtergrondkleur liet hij niet zien dus aan ChatGPT gevraagd waardoor dit zou komen, toen kwam eruit dat ik min-height zou kunnen gebruiken*/
-	margin-top: 3em;
-	border-radius: 0.5em;
 	}
 
 	.app img{
@@ -777,7 +890,29 @@ ul{
 		position: relative;
 	}
 
-	.locatie div{
+	.locatie img{
+		position: absolute;
+		border-radius: 1em;
+		object-fit: cover;
+		object-position: center;
+		opacity: 0;
+		margin-top: 1em;
+	}
+
+	.locatie img.actief{
+		opacity: 1;
+		z-index: 1;
+	}
+/* Voor de opmaak van het carousel en een container daarvan te maken waar de images in moeten blijven */
+	.carousellocatie{
+		position: relative;
+		width: 24em; 
+		height: 12em; 
+		margin: auto;
+		overflow: hidden;
+}
+
+	.locatie div:nth-of-type(2){
 		position: relative;
 		background-color: white;
 		border-radius: 1em;
@@ -803,6 +938,27 @@ ul{
 	color: black;
 	border-color: rgb(43 163 99);
 	left: 1em;
+	}
+
+	/* Buttons waarmee er door de afbeeldingen kan worden geklikt */
+	.locatie button{
+		position: absolute;
+		border-radius: 999em;
+		padding: 1em;
+		background-color: transparent;
+		border: solid;
+		border-color: white;
+	}
+
+	.locatie button img{
+		position: absolute;
+		top: 0;
+		object-fit: cover;
+		width: 3em;
+		height: 1em;
+		color: white;
+		filter:brightness(20);
+		opacity: 1;
 	}
 
 	/* nieuwsbrief container */
@@ -968,6 +1124,10 @@ ul{
 	font-size: 0.875rem;
 }
 
+.container button img{
+	height: 2em;
+}
+
 
 .ButtonPlaatje{
 	position: absolute;
@@ -1063,6 +1223,29 @@ ul{
 	height: 20em;
 }
 
+.contact h2{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-size: 1.25em;
+	font-weight: 900;
+	padding-left: 0;
+}
+
+.contact p{
+	padding: 0;
+	margin-bottom: 1em;
+	font-size: 0.9em;
+}
+
+.contact p:nth-of-type(3){
+	margin-bottom: 2em;
+}
+
+.contact a{
+	margin-left: 0em;
+}
+
+
 /* Overlay over de afbeeldingen */
 
 .begin-partnerfoto::before {  /* https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays */
@@ -1089,25 +1272,54 @@ main > section:nth-of-type(2) ul li::before {  /* https://bryanlrobinson.com/blo
 	border-radius: 1em;
 }
 
-.scroll li:nth-of-type(1) img::before {
-	content: "";
-	position: absolute;
-	top: 0;
-    left: 0;
-	width: 100%;
-	height: 102.5%;
-	background-color: green;
-	opacity: 1;
+/* Overlay kleuren scroll afbeelding */
+.scroll li:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1em;
+	width: 15em;
+	height: 18em;
+    z-index: 1; 
+    border-radius: 1em;
+	opacity: 0.7;
+	background-color: #33af6d;
 }
 
+.scroll li:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18em;
+	width: 15em;
+	height: 18em;
+    z-index: 1; 
+    border-radius: 1em;
+	opacity: 0.7;
+	background-color:#df5200;
+}
+
+.scroll li:nth-of-type(3)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 35em;
+	width: 15em;
+	height: 18em;
+    z-index: 1; 
+    border-radius: 1em;
+	opacity: 0.7;
+	background-color:#0072bd;
+}
 
 /*******************/
-/* Carousel autoplay  bron: https://codepen.io/studiojvla/pen/qVbQqW en Chatgpt*/  
+/* Carousel autoplay partneroverzicht  bron: https://codepen.io/studiojvla/pen/qVbQqW en Chatgpt*/  
 /*******************/
 
 .carouselcontainer{
 	position: relative;
 	overflow: hidden; /* items buiten de container zijn zo niet te zien*/
+	margin-top: 2em;
 }
 
 .carouselrij{
@@ -1117,6 +1329,7 @@ main > section:nth-of-type(2) ul li::before {  /* https://bryanlrobinson.com/blo
 	padding: 0;
 	margin: 0;
 	margin-top: 2em;
+	
 }
 
 .carouselrij li{
@@ -1124,25 +1337,27 @@ main > section:nth-of-type(2) ul li::before {  /* https://bryanlrobinson.com/blo
 }
 
 .carouselrij h2{
-position: absolute;
-bottom: 1em;
-color: white;
+	position: absolute;
+	bottom: 2em;
+	color: white;
+	font-size: 1em;
 }
 
 .carouselrij p{
 	position: absolute;
 	top: 1em;
 	left: 1em;
+	font-size: 0.8em;
 	background-color: cadetblue;
-	border-radius: 1em;
+	border-radius: 2em;
 	color: white;
 
 }
 
 .carouselrij img{
-	border-radius: 2em;
-	width: 15em;
-	height: 15em;
+	border-radius: 1em;
+	width: 12em;
+	height: 12em;
 	object-fit: cover;
 }
 
@@ -1170,8 +1385,12 @@ footer ul{
 }
 
 footer img{
-	width: 50%;
-	object-fit: cover;
+	width: 100%;
+    object-fit: contain;
+    /* filter: brightness(3); */
+    object-position: center;
+    height: 10em;
+	margin: 5em 0;
 }
 
 footer p{
@@ -1188,13 +1407,54 @@ footer li a{
 	
 }
 
+/* Vormgeving voor dark mode */
+/* bron: https://codepen.io/shooft/pen/xxozyVW */
+
+@media (prefers-color-scheme: dark) { 
+	:root {
+		background-color: black;
+		color: white;
+	}
+
+	#nieuwsh2{
+		background-color: white;
+		color: black;
+	}
+
+	button{
+		background-color: black;
+	}
+
+	button span{
+		background-color: white;
+	}
+
+	button img{
+		filter: brightness(20);
+	}
+
+	.navbegin.open{
+		background-color: black;
+	}
+
+	.navbegin.open a{
+		color: white;
+	}
 
 
+	div.hidden.visible {
+		color: black;
+	}
 
+	.nu{
+		color: black;
+	}
+}
 
-/*animatie voor de bovenste rij (scrollt naar links)*/
-@keyframes scroll-left{
-	0% {
+/*animatie voor de bovenste rij (scrollt naar rechts)*/
+
+@keyframes scroll-right {
+    0% {
         transform: translateX(0%);
     }
     100% {
@@ -1202,15 +1462,47 @@ footer li a{
     }
 }
 
-/*animatie voor de onderste rij (scrollt naar rechts)*/
-@keyframes scroll-right {
-    0% {
-        transform: translateX(0%);
+/*animatie voor de onderste rij (scrollt naar links)*/
+@keyframes scroll-left{
+	0% {
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
+
+/* Button om de tekst groter te maken (toegankelijkheid) */
+
+.tekstgroter{
+	background-image: linear-gradient(#cc7847, #e05403);
+	position: sticky;
+	margin-top: 3em;
+	left: 2em;
+	font-family: "montserrat", sans-serif;
+	width: 15em;
+	color: white;
+	padding: 0.5em;
+	text-decoration: underline;
+	font-weight: 700;
+	z-index: 8;
+}
+
+.tekstgroot h2.hidden:nth-of-type(2){
+	font-size: 2.25em;
+}
+
+.tekstgroot p.hidden:nth-of-type(1){
+	font-size: 1.25em;
+}
+
+
+
+
+	
+
+
+
 
 
 

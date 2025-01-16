@@ -317,6 +317,23 @@ Ook heb ik geleerd om te werken met gradient, ik had namelijk vlakken en buttons
 
  Ook had ik geen tijd voor de surfaceplane en de light en darkmode. 
 
+
+ ## Herkansing
+
+ Omdat het mij niet gelukt was om optijd mijn website af te maken heb ik dus een herkansing nodig voor dit vak. 
+ Ik ben na het eindgesprek meeteen bezig geweest met het verbeteren van mijn footer, het logo die ik had gebruikt was namelijk niet van goede kwaliteit en had niet de goede kleur dus toen ben ik samen met een klasgenootje hier nog even gaan kijken en is het gelukt op dit op te lossen en het zo erin te zetten zodat het er goed uit zag en ik er tevreden mee was. 
+
+ Daarna kwam de 2e klus, ik had namelijk een div gebruikt in mijn ul en ik kwam erachter in de validator dat dat dus niet mag alleen omdat ik het toch al had opgegeven had ik dat toen niet meer verbeterd in mijn gesprek kwam dit ook naar voren dus hier ben ik dan ook mee bezig geweest. Ik heb de div weggehaald en het anders vormgegeven zonder een div te gebruiken. Nu lukt het niet meer om de onderste linkjes naast elkaar te krijgen want dan verdwijnen ze steeds uit het hamburgermenu maar ik ga hier later nog even naar kijken want ik was hier best weer lang mee bezig omdat het even uitvogelen was hoe ik het dan ging doen ook met de css als de div weg was maar dit is uiteindelijk wel gelukt, alleen dus de laatste linkjes nog naast elkaar.
+
+ Daarna ben ik bezig gegaan met het maken van een darkmode, hiervoor ben ik weer eve terug gegaan naar dlo om te kijken hoe dit ookalweer in elkaar zat en heb ik ook even op de voorbeelden van codepen gekeken en ik heb ervoor gekozen om het gewoon door het systeem/ instelling te laten bepalen, dus als iemand die in darkmode heeft staan dat de pagina dan veranderd. Ik wilde het eerst doen door een knap maar dit leek mij net zo makkelelijk hoe ik het nu heb gedaan.
+ Ik heb zelf mijn laptop in darkmode gezet en zo gekeken wat ik wilde veranderen als het in darkmode werd gezet, omdat er op de website van blijdorp eigenlijk niet veel veranderd wilde ik dat je bij mijn "eigen" site wel echt een verandering zag, dit ging best makkelijk met coderen eigenlijk.
+
+ Een andere dag ben ik weer even gaan kijken naar dat carousel wat ik echt steeds niet voor elkaar heb gekregen, ik heb toen svg toegevoegd aan de buttons zodat je ook echt de pijltjes zag als je naar de volgende afbeelding wil gaan. Daarnaast heb ik voor dit stukje weer gekeken naar de codepen voorbeeld en heb dit toegepast op mijn eigen code maar dit lukte weer niet en je zag het weer niet dus toen heb ik veel gebruik gemaakt van de hulp van chatgpt en heb ik veel dingen gevraagd zodat het uiteindelijk wel heeft gewerkt. Alleen moet ik nog even kijken of dat ik het zo wil houden of dat ik toch de manier van de codepen voorbeeld wil gaan volgen, dus ik kan hier later nog even op terug komen. Ik heb nu namelijk gewoon img elementen onder elkaar staan en heb het niet in een ul staan. 
+ Ook heb ik diezelfde dag nog gekeken naar het autoplay die ik nodig heb op een ander stukje met afbeeldingen alleen was dit ook niet gelukt na een paar keer proberen heb ik de moed opgegeven en ben ik er mee gestopt ook omdat ik dacht dat ik er later wel op terug zou komen. 
+
+ Vandaag (28 december) ben ik weer gaan kijken naar de vormgeving en ben ik bezig geweest met de overlay op sommige afbeeldingen de scroll afbeeldingen moesten namelijk 3 verschillende kleuren ik had hier al een keer een begin aan gemaakt maar toen kwam de kleur niet naar voren nu heb ik het nog een keer geprobeerd en het lukte ik had namelijk nog een keer naar de code die ik een keer al had gebruikt voor een andere overlay gekeken en toen ben ik gewoon wat dingen gaan proberen en uiteindelijk was het gelukkig wel gelukt en bleek het niet zo moeilijk te zijn. 
+
+Ik ben weer bezig geweest met de carousels vandaag (29 december), ik heb ervoor gezorgd dat de autoplay afbeeldingen het doen en dat mijn 2e carousel aan de onderkant van de pagina met de buttons het ook doen. Als eerste ben ik bezig geweest met de autoplay afbeeldingen, ik had het opzetje al eerder gemaakt ik moest alleen nog de javascript toepassen aan het stukje en toen ik dat had gedaan werkte het (met hulp van chatgpt) en was ik daar wel heel blij. Daarna ben ik bezig gegaan met mijn 2e carousel met buttons. Omdat ik dat al een keer eerder had gedaan ging mij dit wel gemakkelijker af alleen liep ik ook wel tegen een paar dingen weer aan. Als eerste was ik vergeten om in de javscript mijn buttons goed aan te roepen ik was namelijk de punten voor de class namen vergeten waardoor het natuurlijk niet werkte want die punt hoort erbij als je iets een class gaf. Nou toen ik hier achter kwam werkte het klikken van de buttons wel alleen stonden de afbeeldingen nu onder elkaar en niet in 1 container. Dus toen heb ik een div aangemaakt waardoor ik er een width en height aan kon geven waardoor de afbeeldingen op dezelfde plek kwamen te staan. 
  
 
 ## Bronnenlijst
@@ -343,6 +360,10 @@ Ook heb ik geleerd om te werken met gradient, ik had namelijk vlakken en buttons
   12.  https://diergaardeblijdorp.nl/nl?utm_term=blijdorp&utm_campaign=B+%7C+Diergaarde+Blijdorp+(NL)&utm_source=adwords&utm_medium=ppc&hsa_acc=2571617763&hsa_cam=269703749&hsa_grp=20206469669&hsa_ad=523858901276&hsa_src=g&hsa_tgt=kwd-306551720060&hsa_kw=blijdorp&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMI5KTjyOeaigMVqDsGAB268gnzEAAYASAAEgJmivD_BwE	voor grid-row-column code
   13. https://codepen.io/studiojvla/pen/qVbQqW voor slider
   14. https://codepen.io/shooft/pen/yLKjzWa gebruikt voor carroussel maar werkt / lukt niet
-
+  15. https://codepen.io/shooft/pen/xxozyVW gebruikt voor dark mode 
+  16. https://codepen.io/shooft/pen/mdBOZLz  en Chatgpt gebruikt voor carousel / nu werkt het wel maar is de afbeelding na een paar keer klikken niet zichtbaar. 
+  17. Eigenlijk gekeken naar oude code voor geluid, maar toen deze bron gebruikt: https://youtu.be/3xlws5og44U?feature=shared
+  18. bron geluid olifant: Blijdorp.nl 
+  19. Bron sneeuw gifje: https://www.zonova.nl/dl-27111-7-106458/download/sneeuwgif.html
 
 </details>
