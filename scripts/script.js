@@ -32,6 +32,75 @@ document.addEventListener("DOMContentLoaded", () => {
     targets.forEach((target) => observer.observe(target)); 
   });
 
+
+  // automatische verandering van carousel bron: Chatgpt prompt: hoe zorg ik ervoor dat mijn afbeeldingen automatisch naar de volgende afbeelding gaan en het een autoplay creeërt. 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".carousel2 img");
+    let currentIndex = 0;
+
+    const changeImage = () => {
+        // Verwijder de 'actief' klasse van de huidige afbeelding
+        images[currentIndex].classList.remove("actief");
+
+        // Bepaal de index van de volgende afbeelding
+        currentIndex = (currentIndex + 1) % images.length;
+
+        // Voeg de 'actief' klasse toe aan de nieuwe afbeelding
+        images[currentIndex].classList.add("actief");
+    };
+
+    // Zet een interval voor het veranderen van de afbeelding
+    setInterval(changeImage, 4000); // Elke 4 seconden
+});
+
+
+// Geluid afspelen bij klik op de button // bron: vorig project van programmeren toen deze bron gebruikt: https://youtu.be/3xlws5og44U?feature=shared
+
+const buttonGeluid = document.getElementById("geluid");
+
+function geluidAfspelen (){
+  const audio = new Audio ("olifant.mp3"); // bron voor geluid blijdorp.nl 
+  audio.play();
+}
+
+buttonGeluid.addEventListener("click", geluidAfspelen);
+
+// Tekst vergroten button //
+
+const body = document.body;
+const tekstvergrotenButton = document.querySelector("button.tekstgroter")
+
+function tekstGroter () {
+  body.classList.toggle("tekstgroot");
+  if (tekstvergrotenButton.textContent == "Tekst groter maken") {
+      tekstvergrotenButton.textContent = "Tekst kleiner maken";
+
+  } else {
+      tekstvergrotenButton.textContent = "Tekst groter maken";
+  }
+}
+
+tekstvergrotenButton.addEventListener("click", tekstGroter);
+
+  // sneeuwknop // 
+
+  const sneeuwKnop = document.getElementById("sneeuwknop");
+const sneeuwOverlay = document.getElementById("sneeuw-overlay");
+
+sneeuwKnop.addEventListener("click", () => {
+  // Toggle de 'verborgen' klasse
+  sneeuwOverlay.classList.toggle("verborgen");
+
+  // Verander de tekst van de knop
+  if (sneeuwOverlay.classList.contains("verborgen")) {
+    sneeuwKnop.textContent = "Laat het sneeuwen";
+  } else {
+    sneeuwKnop.textContent = "Stop sneeuw";
+  }
+});
+
+
   // Carousel 1//  bron: Chatgpt en https://codepen.io/shooft/pen/yLKjzWa 
   function createLevelsCarrousel(carrouselID) {
     let carrousel = document.querySelector("#" + carrouselID);
@@ -206,74 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   
 
-  // automatische verandering van carousel bron: Chatgpt prompt: hoe zorg ik ervoor dat mijn afbeeldingen automatisch naar de volgende afbeelding gaan en het een autoplay creeërt. 
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".carousel2 img");
-    let currentIndex = 0;
-
-    const changeImage = () => {
-        // Verwijder de 'actief' klasse van de huidige afbeelding
-        images[currentIndex].classList.remove("actief");
-
-        // Bepaal de index van de volgende afbeelding
-        currentIndex = (currentIndex + 1) % images.length;
-
-        // Voeg de 'actief' klasse toe aan de nieuwe afbeelding
-        images[currentIndex].classList.add("actief");
-    };
-
-    // Zet een interval voor het veranderen van de afbeelding
-    setInterval(changeImage, 4000); // Elke 4 seconden
-});
-
-
-// Geluid afspelen bij klik op de button // bron: vorig project van programmeren toen deze bron gebruikt: https://youtu.be/3xlws5og44U?feature=shared
-
-const buttonGeluid = document.getElementById("geluid");
-
-function geluidAfspelen (){
-  const audio = new Audio ("olifant.mp3"); // bron voor geluid blijdorp.nl 
-  audio.play();
-}
-
-buttonGeluid.addEventListener("click", geluidAfspelen);
-
-
-
-
-// Tekst vergroten button //
-
-const body = document.body;
-const tekstvergrotenButton = document.querySelector("button.tekstgroter")
-
-function tekstGroter () {
-  body.classList.toggle("tekstgroot");
-  if (tekstvergrotenButton.textContent == "Tekst groter maken") {
-      tekstvergrotenButton.textContent = "Tekst kleiner maken";
-
-  } else {
-      tekstvergrotenButton.textContent = "Tekst groter maken";
-  }
-}
-
-tekstvergrotenButton.addEventListener("click", tekstGroter);
-
-
-// const sneeuwKnop = document.getElementById("sneeuwknop");
-// const sneeuwOverlay = document.getElementById("sneeuw-overlay");
-
-// sneeuwKnop.addEventListener("click", () => {
-//   // Toggle de 'verborgen' klasse
-//   sneeuwOverlay.classList.toggle("verborgen");
-
-//   // Verander de tekst van de knop
-//   if (sneeuwOverlay.classList.contains("verborgen")) {
-//     sneeuwKnop.textContent = "Laat het sneeuwen";
-//   } else {
-//     sneeuwKnop.textContent = "Stop sneeuw";
-//   }
-// });
 
 
 

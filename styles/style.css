@@ -1555,15 +1555,44 @@ footer a{
 	font-size: 1.25em;
 }
 
-
-
-
-	
-
-
-
-
-
-
-
-
+/* Zorg dat de overlay over het hele scherm valt */
+#sneeuw-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none; /* Maakt het niet klikbaar */
+	z-index: 1000; /* Zorgt dat het boven alles komt */
+  }
+  
+  #sneeuw-overlay img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  /* Verborgen staat */
+  .verborgen {
+	display: none;
+  }
+  
+  /* Styling voor de knop */
+  #sneeuwknop {
+	position: fixed;
+	top: 1em;
+	right: 1em;
+	z-index: 1001;
+	padding: 0.5em 1em;
+	background: #e05403;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+  }
+  
+  #sneeuwknop:hover {
+	background: #cc7847;
+  }
+  
