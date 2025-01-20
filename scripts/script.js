@@ -86,23 +86,16 @@ tekstvergrotenButton.addEventListener("click", tekstGroter);
   // sneeuwknop // 
 
   const sneeuwKnop = document.getElementById("sneeuwknop");
-const sneeuwOverlay = document.getElementById("sneeuw-overlay");
+  const sneeuwBreedte = document.getElementById("sneeuwbreedte");
 
 sneeuwKnop.addEventListener("click", () => {
   // Toggle de 'verborgen' klasse
-  sneeuwOverlay.classList.toggle("verborgen");
-
-  // Verander de tekst van de knop
-  if (sneeuwOverlay.classList.contains("verborgen")) {
-    sneeuwKnop.textContent = "Laat het sneeuwen";
-  } else {
-    sneeuwKnop.textContent = "Stop sneeuw";
-  }
+sneeuwBreedte.classList.toggle("verborgen");
 });
 
 
-  // Carousel 1//  bron: Chatgpt en https://codepen.io/shooft/pen/yLKjzWa 
-  function createLevelsCarrousel(carrouselID) {
+  // Carousel 1// https://codepen.io/shooft/pen/yLKjzWa en bron: Chatgpt
+  function createCarrousel(carrouselID) {
     let carrousel = document.querySelector("#" + carrouselID);
     let carrouselElementsContainer = carrousel.querySelector(":scope > ul");
     let carrouselElements = carrouselElementsContainer.querySelectorAll("li");
@@ -182,7 +175,7 @@ sneeuwKnop.addEventListener("click", () => {
   /********** DE CARROUSEL CREËREN **********/
   (function () {
     // Nadat de pagina geladen is, de carrousels activeren
-    createLevelsCarrousel("justButtons"); // Hier de ID gebruiken van de section in de HTML
+    createCarrousel("justButtons"); // Hier de ID gebruiken van de section in de HTML
   })();
   
   
@@ -190,7 +183,7 @@ sneeuwKnop.addEventListener("click", () => {
 
   // Carousel 2 ook met de vorige en volgende buttons //  bron: Chatgpt en  https://codepen.io/shooft/pen/mdBOZLz 
 
-  function createLevelsCarrousel(carrouselID2) {
+  function createCarrousel2(carrouselID2) {
     let carrousel2 = document.querySelector("#" + carrouselID2);
     let carrouselElementsContainer2 = carrousel2.querySelector(":scope > ul");
     let carrouselElements2 = carrouselElementsContainer2.querySelectorAll("li");
@@ -270,7 +263,7 @@ sneeuwKnop.addEventListener("click", () => {
   /********** DE CARROUSEL CREËREN **********/
   (function () {
     // Nadat de pagina geladen is, de carrousels activeren
-    createLevelsCarrousel("locatie"); // Hier de ID gebruiken van de section in de HTML
+    createCarrousel2("locatie"); // Hier de ID gebruiken van de section in de HTML
   })();
   
   

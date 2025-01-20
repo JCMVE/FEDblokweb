@@ -379,6 +379,8 @@ Ook heb ik vandaag de carousel echt werkend gekregen hoe ik het wilde!!! IK BEN 
   24. bron youtube logo: https://uxwing.com/youtube-app-white-icon/
   25. bron facebook logo: https://www.svgrepo.com/svg/3885/facebook
   26. https://codepen.io/shooft/pen/mdBOZLz voor carousel
+  27. https://www.flaticon.com/free-icon/snowflake_2530064 bron voor het sneeuwvlok icoontje
+
 
   
 

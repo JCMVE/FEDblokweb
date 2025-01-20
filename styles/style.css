@@ -1555,8 +1555,8 @@ footer a{
 	font-size: 1.25em;
 }
 
-/* Zorg dat de overlay over het hele scherm valt */
-#sneeuw-overlay {
+/* Sneeuwknop */
+#sneeuwbreedte {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1566,7 +1566,7 @@ footer a{
 	z-index: 1000; /* Zorgt dat het boven alles komt */
   }
   
-  #sneeuw-overlay img {
+  #sneeuwbreedte img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -1579,20 +1579,29 @@ footer a{
   
   /* Styling voor de knop */
   #sneeuwknop {
-	position: fixed;
-	top: 1em;
-	right: 1em;
-	z-index: 1001;
+	position: absolute;
+	width: 3em;
+	height: 3em;
+	top: 1.5em;
+	right: 6em;
+	z-index: 999;
 	padding: 0.5em 1em;
-	background: #e05403;
+	background-color: #004877;
 	color: white;
 	border: none;
-	border-radius: 5px;
+	border-radius: 1em;
 	cursor: pointer;
 	font-size: 1em;
+	z-index: 9;
+  }
+
+  #sneeuwknop img{
+	object-fit: contain;
+	width: 3em;
+	height: 2em;
+	position: absolute;
+	z-index: 9;
   }
   
-  #sneeuwknop:hover {
-	background: #cc7847;
-  }
+ 
   
