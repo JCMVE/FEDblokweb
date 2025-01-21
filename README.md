@@ -184,15 +184,10 @@ Toen ben ik nog gaan kijken naar het menu van de site en ik heb wat dingen opgez
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Mijn grootste vraag deze week was over de animatie op de partner pagina hoe ik daar aan kon beginnen, hier heb ik toen goede hulp mee gekregen en aan het einde wist ik hoe ik dit moest gaan aanpakken. 
+  Ook heb ik gevraagd hoe ik de zwarte achtergrond op een plaatje kan zetten, dit lukte namelijk nog niet helemaal op goed te positioneren en dit heeft de studentassistent ook laten zien zodat ik daar verder mee aan de slag kon. 
 
 </details>
-
-
-
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -202,6 +197,8 @@ Toen ben ik nog gaan kijken naar het menu van de site en ik heb wat dingen opgez
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Dit heb ik op het laatste gedaan toen mijn site klaar was!!
 
   screenreader:
   - De volgorde waarop de kopjes worden gelezen is logisch. Eerst leest hij de h1 op en gaat dan verder met de h2 en h3 maar deze leest hij gewoon op in de volgorde zoals ik het ook in mijn code heb staan.
@@ -405,8 +402,5 @@ Toch had ik toch gebprobeerd om de media prefers reduced motion toe te voegen al
   25. bron facebook logo: https://www.svgrepo.com/svg/3885/facebook
   26. https://codepen.io/shooft/pen/mdBOZLz voor carousel
   27. https://www.flaticon.com/free-icon/snowflake_2530064 bron voor het sneeuwvlok icoontje
-
-
-  
 
 </details>
