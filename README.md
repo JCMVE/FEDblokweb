@@ -203,11 +203,18 @@ Toen ben ik nog gaan kijken naar het menu van de site en ik heb wat dingen opgez
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  screenreader:
+  - De volgorde waarop de kopjes worden gelezen is logisch. Eerst leest hij de h1 op en gaat dan verder met de h2 en h3 maar deze leest hij gewoon op in de volgorde zoals ik het ook in mijn code heb staan.
+  - Ook alle linkjes worden voorgelezen en zelfds de vorige en volgende knopppen en wordt er ook bij gezet waarvoor deze zijn. 
+  - Als ik spatie en tab gebruik om door de website te gaan dan volgt het gewoon de layout van de website
+  - Als ik mijn website bekijk op de telefoon dan is er genoeg ruimte om te scrollen en de linkjes en buttons zijn groot genoeg zodat ik er makkelijk op kan klikken.
+  - Voor de headings heb ik gewoon 1 h1 gebruikt en voor de rest h2 en h3. Wat wel uit de validator kwam was dat niet iedere section een heading heeft dus dat is dan het enige minpuntje. 
+  - Wat ik heb verbeterd qua de echte site, is dat ik nu wel voor lijstje de ul element heb gebruikt. Op de echte site hadden ze hiervoor veel div gebruikt maar ik he nu ul gebruikt. Bijvoorbeeld voor linkjes die onder elkaar stonden, voor de carrousels, voor de afbeeldingen die onder elkaar staan en de social media logo's in de footer.
+  - Ik heb een autoplay afbeelding in mijn site die al begint vanaf dat je op de pagina komt i.p.v dat het pas begint als je bij dat stukje bent op de pagina dus dat is wel wat minder vergeleken met de echte site.
+  - Wel ondersteunt mijn site nu dark mode en zie je ook echt een verandering. Als ik bij de echte site dark mode aan had staan zag je namelijk helemaal geen verandering in de site en ik heb er nu voor gezorgd dat je ook wel echt een verandering ziet. 
+  - Ik heb geen reduced motion in mijn eigen site (wel geprobeerd alleen dit werkte op een of andere manier niet)
+
 </details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
 
@@ -349,6 +356,8 @@ Ik heb dat geprobeerd en dus de code van het hamburgermenu en de surface plane i
 Waarschijnlijk ging code dus niet echt goed met elkaar waardoor het niet werkte, maar ik weet nogsteeds niet echt waar het aan kan liggen, maar het werkt en daar ben ik blij mee!!
 
 Als laatste heb ik nog een id veranderd naar een class, ik had namelijk de img van mijn logo een id gegeven maar deze kwam in allebei de html bestanden voor dus dan mag ik geen id daarvoor gebruiken en heb ik het veranderd in een class en ook gelijk de css aangepast, dat was denk ik wel het laatste wat ik aan mijn code moest doen en dan is het nu eindelijk KLAAR!!!!
+
+Toch had ik toch gebprobeerd om de media prefers reduced motion toe te voegen alleen deed dit niks als ik dit in mijn css zetten met de class waarvan ik dan de animatie wilde uitschakelen. 
 
 
   ### Je uitkomst - karakteristiek screenshots:
