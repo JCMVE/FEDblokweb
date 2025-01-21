@@ -42,7 +42,7 @@ function geluidAfspelen (){
 
 buttonGeluid.addEventListener("click", geluidAfspelen);
 
-// Tekst vergroten button //
+// Tekst vergroten button // hulp van Esmae
 
 const body = document.body;
 const tekstvergrotenButton = document.querySelector("button.tekstgroter")
