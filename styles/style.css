@@ -1562,8 +1562,8 @@ footer a{
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	pointer-events: none; /* Maakt het niet klikbaar */
-	z-index: 1000; /* Zorgt dat het boven alles komt */
+	pointer-events: none; 
+	z-index: 999; 
   }
   
   #sneeuwbreedte img {

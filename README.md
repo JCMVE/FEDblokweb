@@ -74,7 +74,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="readme-images/breakdownpagina.jpg" width="375px" alt="breakdown van de hele partner pagina">
-  <img>
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/breakdownmenu.jpg" width="375px" alt="breakdown van een het menu">
@@ -288,10 +287,6 @@ vragen:
 
   Ook had ik geen tijd meer om het laatste deel te maken van de footer met de social media enzo. 
 
-  ### Je uitkomst - karakteristiek screenshots:
-  
-
-
   ### Dit ging goed/Heb ik geleerd: 
 
 Ik heb geleerd hoe ik tekst over images heen moet plaatsen, aan het begin lukte dit niet en had ik er wel moeite mee, maar na de les die we erover hadden gehad ben ik met mijn eigen code aan de slag gegaan en werkte dit eigenlijk goed. Daar ben ik wel blij mee omdat ik dit veel moest toepassen op mijn pagina. 
@@ -342,6 +337,27 @@ Ook heb ik vandaag eindelijk de witruimte aan de zijkant weg gekregen, dit was a
 Hier ben ik achter gekomen door alle elementen te bekijken en kijken welke dus buiten de main ging. Toen ik daar achter kwam was ik echt heel blij omdat ik hier al meerdere keren naar gekeken had en het steeds niet kon vinden. 
 
 Ook heb ik vandaag de carousel echt werkend gekregen hoe ik het wilde!!! IK BEN HIER ZO BLIJ MEE. Ik heb namelijk echt zoveel keer naar de code van de codepen gekeken en steeds lukte het niet en ik snapte niet wat ik verkeerd deed. Toen heb ik aan chatgpt gevraagd wat ik zou kunnen doen en deze had toen een hele andere code gegeven maar wat hier het ding was is dat de img elementen verdwenen als je door elk element heen was. Toch voelde het ook niet echt goed om alles zo van chatgpt over te nemen en wilde ik echt nog een keer kijken naar de code van codepen. Ik heb echt meerdere malen dit geprobeerd maar steeds lukte het nie, want of de afbeeldingen gingen niet naast elkaar om de knoppen werkte niet. Nu had ik extra lang gekeken naar de code op codepen en wat ik wel en niet moest gaan gebruiken en ben ik letterlijk elk regeltje gaan kijken of ik iets had gemist of nog moest toevoegen. Op een gegeven moment stond de img elementen er en de buttons om naar de volgende en vorige afbeelding te gaan ook. Alleen gaven die buttons een error namelijk: cannot GET / volgende of cannot GET / vorige en ik snapte niet waarom want de buttons stonden wel gewoon gelinkt in de javascript. Toen heb ik wel aan chatGpt gevraagd wat er mis gaat. Ik heb gezegd welke error melding naar voren kwam en heb mijn code erin gezet en toen kwam ik er dus achter dat de fout in de javascript zat en er iets fout was met de addEventListener, dit heb ik veranderd en toen deed de carousel het eindelijk!!!!!
+
+Daarna ben ik verder gegaan met het laatste dingetje voor de surface plane, ik wilde namelijk een knop maken waardoor het ging sneeuwen. Eeerst dacht ik echt heel erg lastig want ik ging voorbeelden opzoeken en daar hadden ze de sneeuw zelf gecodeerd en gepositioneerd. Maar toen ik het hier met Maya en Esmae over had zeiden ze dat ik ook gewoon een gif kan gebruiken met sneeuw, zelf nog helemaal niet aan gedacht. Toen werd het een stuk makkelijker omdat ik een gifje kon gebruiken. Het is nogsteeds raar want ik probeer het dus op mijn index.html te doen alleen hier werkt het niet maar op mijn partner.html wel. Ik heb geprobeerd om window.path te gebruiken maar ook hier werkt het niet. 
+
+Als eerste wilde ik de button net zoals mijn "tekst vergroten" button dat de tekst ook mee veranderd, maar toen ik dat eerst had gemaakt vond ik het toch leuker om een icoontje te gebruiken van een sneeuwvlokje dus deze heb ik toen in mijn button toegevoegd i.p.v de tekst. 
+Toen dat was gelukt ben ik nog gaan kijken waar ik dan wilde dat de knop kwam en toen heb ik besloten om deze naast het hamburgermenu bovenaan te zetten. Ik ben wel heel erg blij met het eindresultaat van dit.
+
+Maar toen kwam het volgende probleem weer, namelijk dat mijn carousel het weer niet deed. Ik was zo blij toen de carousel het het eindelijk deed en nu werkte die weer niet terwijl ik er niks aan had veranderd. Ik ben toen eerst zelf gaan kijken of ik een fout kon ontdekken maar ik zag niks fout. Toen ben ik Chatgpt gaan vragen en ook deze zei dat mijn code er goed uit zag. 
+Toen ben ik de dingen van de surface plane uit mijn code gaan halen om te kijken of dit wel werkte, ik had namelijk eerst het probleem dat al mijn dingen van de surface plane het niet meer deden en deze had ik toen boven de code van de carousels gezet en toen werkte het wel weer. Dus ik dat proberen en ja hoor het deed het weer. Toen kwam er iets in mij op wat Maya had gezegd namelijk dat zei 2 javascript bestanden had omdat het anders bij haar ook niet met elkaar werkte dus toen dacht ik oke dit ga ik ook proberen. 
+Ik heb dat geprobeerd en dus de code van het hamburgermenu en de surface plane in een apart bestand gezet en toen werkte alles weer!!
+Waarschijnlijk ging code dus niet echt goed met elkaar waardoor het niet werkte, maar ik weet nogsteeds niet echt waar het aan kan liggen, maar het werkt en daar ben ik blij mee!!
+
+Als laatste heb ik nog een id veranderd naar een class, ik had namelijk de img van mijn logo een id gegeven maar deze kwam in allebei de html bestanden voor dus dan mag ik geen id daarvoor gebruiken en heb ik het veranderd in een class en ook gelijk de css aangepast, dat was denk ik wel het laatste wat ik aan mijn code moest doen en dan is het nu eindelijk KLAAR!!!!
+
+
+  ### Je uitkomst - karakteristiek screenshots:
+
+  Homepagina:
+  <img src="readme-images/homepagina-eindresultaat.png" width="375px" alt="mijn eindresultaat van de homepagina">
+
+  Partner pagina:
+ <img src="readme-images/partnerpagina-eindresultaat.png" width="375px" alt="mijn eindresultaat van de partnerpagina">
 
 ## Bronnenlijst
 
