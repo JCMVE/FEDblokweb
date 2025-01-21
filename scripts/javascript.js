@@ -59,7 +59,7 @@ function tekstGroter () {
 
 tekstvergrotenButton.addEventListener("click", tekstGroter);
 
-  // sneeuwknop // 
+  // sneeuwknop // hulp van Chatgpt
 
   const sneeuwKnop = document.getElementById("sneeuwknop");
   const sneeuwBreedte = document.getElementById("sneeuwbreedte");
