@@ -29,7 +29,7 @@ body {
 
 }
 
-#logo{
+.logo{
 	width: 8em;
 	height: 10em;
 	object-fit: contain;
